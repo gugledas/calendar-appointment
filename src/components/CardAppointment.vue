@@ -1,0 +1,339 @@
+<template>
+	<div>
+		<div class="container">
+			<div class="date-hours-title">2. Choix de la date & heure</div>
+			<div class="date-hours-content" v-show="!isLoading">
+				<div class="content-header">
+					<div class="date-header swiper-creneau">
+						<div class="swiper-wrapper">
+							<div
+								class="swiper-slide"
+								v-for="(days, index) in daysCreneaux"
+								:key="index"
+							>
+								<div
+									class="dh-date"
+									:class="{ 'dh-date--current': isCurrentDay(days) }"
+									v-html="days.label"
+								></div>
+							</div>
+						</div>
+
+						<div class="nav-prev">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 24 24"
+								class="css-jr5xe1"
+							>
+								<path
+									fill-rule="evenodd"
+									d="M8.705 6.705a.998.998 0 0 0 0 1.41L12.58 12l-3.876 3.884a.998.998 0 0 0 1.411 1.411L15.41 12l-5.295-5.295a.997.997 0 0 0-1.41 0z"
+								></path>
+								<use transform="matrix(0 1 1 0 -.295 .295)"></use>
+							</svg>
+						</div>
+						<div class="nav-next">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 24 24"
+								class="css-nil"
+							>
+								<path
+									fill-rule="evenodd"
+									d="M8.705 6.705a.998.998 0 0 0 0 1.41L12.58 12l-3.876 3.884a.998.998 0 0 0 1.411 1.411L15.41 12l-5.295-5.295a.997.997 0 0 0-1.41 0z"
+								></path>
+								<use transform="matrix(0 1 1 0 -.295 .295)"></use>
+							</svg>
+						</div>
+					</div>
+				</div>
+				<div class="date-row swiper-rows">
+					<div class="swiper-wrapper">
+						<div
+							class="swiper-slide"
+							v-for="(creneaux, index) in daysCreneaux"
+							:key="index"
+						>
+							<date-hour-column :creneaux="creneaux.creneau">
+							</date-hour-column>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div
+				v-if="isLoading"
+				class="text-center d-flex justify-content-center my-5 py-5"
+			>
+				<b-spinner style="width: 3rem; height: 3rem" variant="dark"></b-spinner>
+			</div>
+		</div>
+	</div>
+</template>
+
+<script>
+import { mapState } from "vuex";
+import { mapGetters } from "vuex";
+
+/* moment js */
+import moment from "moment";
+/*  */
+// core version + navigation, pagination modules:
+import Swiper, { Navigation, Pagination } from "swiper";
+// import Swiper and modules styles
+import "swiper/css";
+
+/* swiper */
+import DateHourColumn from "./DateHourColumn.vue";
+/* import des composants */
+
+export default {
+	components: { DateHourColumn },
+	name: "CardAppointment",
+	props: {
+		msg: String,
+	},
+
+	data() {
+		return {};
+	},
+	mounted() {
+		new Swiper(".swiper-creneau", {
+			speed: 600,
+			modules: [Navigation, Pagination],
+			pagination: {
+				el: ".swiper-pagination",
+			},
+			navigation: {
+				nextEl: ".nav-next",
+				prevEl: ".nav-prev",
+			},
+			slidesPerView: 1,
+			slidesPerGroup: 1,
+			allowTouchMove: false,
+			spaceBetween: 30,
+			loop: false,
+			breakpoints: {
+				577: {
+					slidesPerView: 2,
+					slidesPerGroup: 2,
+				},
+				769: {
+					slidesPerView: 3,
+					slidesPerGroup: 3,
+				},
+				993: {
+					slidesPerView: 5,
+					slidesPerGroup: 5,
+				},
+				1200: {
+					slidesPerView: 6,
+					slidesPerGroup: 6,
+				},
+			},
+		});
+		new Swiper(".swiper-rows", {
+			speed: 600,
+			modules: [Navigation, Pagination],
+			pagination: {
+				el: ".swiper-pagination",
+			},
+			navigation: {
+				nextEl: ".nav-next",
+				prevEl: ".nav-prev",
+			},
+			effect: "fade",
+			fadeEffect: {
+				crossFade: true,
+			},
+			slidesPerView: 1,
+			slidesPerGroup: 1,
+			allowTouchMove: false,
+			loop: false,
+			spaceBetween: 30,
+			breakpoints: {
+				577: {
+					slidesPerView: 2,
+					slidesPerGroup: 2,
+				},
+				769: {
+					slidesPerView: 3,
+					slidesPerGroup: 3,
+				},
+				993: {
+					slidesPerView: 5,
+					slidesPerGroup: 5,
+				},
+				1200: {
+					slidesPerView: 6,
+					slidesPerGroup: 6,
+				},
+			},
+		});
+	},
+	computed: {
+		...mapState({ isLoading: "creneauIsLoading" }),
+		...mapGetters(["daysCreneaux"]),
+	},
+	methods: {
+		/** *
+		 *  @param {object} days represente les information du jours
+		 *  @param {string} object.label le labe du jour
+		 *  @param {object} object.creneau liste tout les creneaux du jour avec avec les informations d'affichage
+		 * */
+		showCreneauOfDays() {},
+		/** *
+		 *  @param {object} days represente les information du jours
+		 *  @param {string} object.value la date du jour au format "Fri 2 Sep"
+		 * */
+		isCurrentDay(days) {
+			let real_Date = days.value;
+			let today = moment().format("ddd D MMM");
+			//console.log("re", real_Date, "----", today);
+			return today.includes(real_Date);
+		},
+		/** *
+		 *  @param {string} date
+		 * */
+		formatToValidDate(date) {
+			let realDate = "";
+			if (date) {
+				let reg = date.split("<br>").join(" ").split(".");
+
+				realDate = reg.join("").replace("     ", " ");
+			}
+			return realDate;
+		},
+	},
+};
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style lang="scss">
+.date-hours-content {
+	margin-top: 5px;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	padding-bottom: 40px;
+	box-shadow: rgb(60 66 87 / 4%) 0px 0px 5px 0px,
+		rgb(0 0 0 / 4%) 0px 0px 10px 0px;
+	border-radius: 4px;
+	background-color: white;
+}
+.date-header {
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	padding: 10px 5%;
+	position: relative;
+	border-bottom: 1px solid rgb(229, 229, 229);
+	min-height: 50px;
+	.swiper-wrapper {
+		display: flex;
+		-webkit-box-pack: justify;
+		justify-content: space-between;
+	}
+	.swiper-slide {
+		width: auto;
+		display: flex;
+		justify-content: center;
+	}
+}
+.dh-date {
+	min-width: 130px;
+	text-align: center;
+	display: flex;
+	color: rgb(151, 151, 151);
+	font-weight: bold;
+	-webkit-box-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	justify-content: center;
+	font-size: 16px;
+	&--current {
+		color: rgb(13, 13, 13);
+	}
+}
+.date-row {
+	height: calc(100% - 59px);
+	padding: 0px 5% 26px;
+
+	border-radius: 4px;
+	.swiper-wrapper {
+		-webkit-box-pack: justify;
+		justify-content: space-between;
+		display: flex;
+	}
+	.swiper-slide {
+		width: auto;
+	}
+	.dr-colum {
+		min-width: 130px;
+		text-align: center;
+	}
+	.days_hours {
+		color: #0a0a0a;
+		font-size: 20px;
+		padding-top: 24px;
+		line-height: 1.29;
+		cursor: pointer;
+		&:hover {
+			font-weight: bold;
+		}
+	}
+}
+.date-hours-title {
+	margin-bottom: 10px;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 1.5;
+	margin-top: 22px;
+	text-align: left;
+}
+.content-header {
+	position: relative;
+	svg {
+		width: 35px;
+		height: 35px;
+		fill: black;
+	}
+	.nav-prev,
+	.nav-next {
+		position: absolute;
+		padding: 1rem;
+		cursor: pointer;
+		top: 0;
+		//background: red;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		z-index: 10;
+		//background: white;
+	}
+	.nav-prev {
+		left: 0;
+		transform: rotate(-180deg);
+	}
+	.nav-next {
+		right: 0;
+	}
+	.swiper-button-disabled {
+		cursor: not-allowed;
+		svg {
+			fill: rgb(156, 156, 156);
+		}
+	}
+	.swiper-button-lock {
+		cursor: not-allowed;
+	}
+}
+.swiper-creneau,
+swiper-rows {
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	overflow: hidden;
+	list-style: none;
+	z-index: 1;
+}
+</style>

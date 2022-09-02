@@ -1,0 +1,4641 @@
+{
+	"jours": [
+		{
+			"label": "Fri. <br>  2 Sep",
+			"creneau": [
+				{
+					"conf": {
+						"label": "Vendredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "07:00"
+				},
+				{
+					"conf": {
+						"label": "Vendredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "08:00"
+				},
+				{
+					"conf": {
+						"label": "Vendredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "09:00"
+				},
+				{
+					"conf": {
+						"label": "Vendredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "10:00"
+				},
+				{
+					"conf": {
+						"label": "Vendredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "11:00"
+				},
+				{
+					"conf": {
+						"label": "Vendredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "12:00"
+				},
+				{
+					"conf": {
+						"label": "Vendredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "13:00"
+				},
+				{
+					"conf": {
+						"label": "Vendredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "14:00"
+				},
+				{
+					"conf": {
+						"label": "Vendredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "15:00"
+				},
+				{
+					"conf": {
+						"label": "Vendredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "16:00"
+				}
+			]
+		},
+		{
+			"label": "Sat. <br>  3 Sep",
+			"creneau": [
+				{
+					"conf": {
+						"label": "Samedi",
+						"status": 0,
+						"h_d": "9",
+						"m_d": "30",
+						"h_f": "15",
+						"m_f": "20"
+					},
+					"value": "09:30"
+				},
+				{
+					"conf": {
+						"label": "Samedi",
+						"status": 0,
+						"h_d": "9",
+						"m_d": "30",
+						"h_f": "15",
+						"m_f": "20"
+					},
+					"value": "10:30"
+				},
+				{
+					"conf": {
+						"label": "Samedi",
+						"status": 0,
+						"h_d": "9",
+						"m_d": "30",
+						"h_f": "15",
+						"m_f": "20"
+					},
+					"value": "11:30"
+				},
+				{
+					"conf": {
+						"label": "Samedi",
+						"status": 0,
+						"h_d": "9",
+						"m_d": "30",
+						"h_f": "15",
+						"m_f": "20"
+					},
+					"value": "12:30"
+				},
+				{
+					"conf": {
+						"label": "Samedi",
+						"status": 0,
+						"h_d": "9",
+						"m_d": "30",
+						"h_f": "15",
+						"m_f": "20"
+					},
+					"value": "13:30"
+				},
+				{
+					"conf": {
+						"label": "Samedi",
+						"status": 0,
+						"h_d": "9",
+						"m_d": "30",
+						"h_f": "15",
+						"m_f": "20"
+					},
+					"value": "14:30"
+				}
+			]
+		},
+		{
+			"label": "Sun. <br>  4 Sep",
+			"creneau": [
+				{
+					"conf": {
+						"label": "Dimanche",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "07:00"
+				},
+				{
+					"conf": {
+						"label": "Dimanche",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "08:00"
+				},
+				{
+					"conf": {
+						"label": "Dimanche",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "09:00"
+				},
+				{
+					"conf": {
+						"label": "Dimanche",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "10:00"
+				},
+				{
+					"conf": {
+						"label": "Dimanche",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "11:00"
+				},
+				{
+					"conf": {
+						"label": "Dimanche",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "12:00"
+				},
+				{
+					"conf": {
+						"label": "Dimanche",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "13:00"
+				},
+				{
+					"conf": {
+						"label": "Dimanche",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "14:00"
+				},
+				{
+					"conf": {
+						"label": "Dimanche",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "15:00"
+				},
+				{
+					"conf": {
+						"label": "Dimanche",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "16:00"
+				}
+			]
+		},
+		{
+			"label": "Mon. <br>  5 Sep",
+			"creneau": [
+				{
+					"conf": {
+						"label": "Lundi",
+						"status": 0,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "07:00"
+				},
+				{
+					"conf": {
+						"label": "Lundi",
+						"status": 0,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "08:00"
+				},
+				{
+					"conf": {
+						"label": "Lundi",
+						"status": 0,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "09:00"
+				},
+				{
+					"conf": {
+						"label": "Lundi",
+						"status": 0,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "10:00"
+				},
+				{
+					"conf": {
+						"label": "Lundi",
+						"status": 0,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "11:00"
+				},
+				{
+					"conf": {
+						"label": "Lundi",
+						"status": 0,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "12:00"
+				},
+				{
+					"conf": {
+						"label": "Lundi",
+						"status": 0,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "13:00"
+				},
+				{
+					"conf": {
+						"label": "Lundi",
+						"status": 0,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "14:00"
+				},
+				{
+					"conf": {
+						"label": "Lundi",
+						"status": 0,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "15:00"
+				},
+				{
+					"conf": {
+						"label": "Lundi",
+						"status": 0,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "16:00"
+				}
+			]
+		},
+		{
+			"label": "Tue. <br>  6 Sep",
+			"creneau": [
+				{
+					"conf": {
+						"label": "Mardi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "07:00"
+				},
+				{
+					"conf": {
+						"label": "Mardi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "08:00"
+				},
+				{
+					"conf": {
+						"label": "Mardi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "09:00"
+				},
+				{
+					"conf": {
+						"label": "Mardi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "10:00"
+				},
+				{
+					"conf": {
+						"label": "Mardi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "11:00"
+				},
+				{
+					"conf": {
+						"label": "Mardi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "12:00"
+				},
+				{
+					"conf": {
+						"label": "Mardi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "13:00"
+				},
+				{
+					"conf": {
+						"label": "Mardi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "14:00"
+				},
+				{
+					"conf": {
+						"label": "Mardi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "15:00"
+				},
+				{
+					"conf": {
+						"label": "Mardi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "16:00"
+				}
+			]
+		},
+		{
+			"label": "Wed. <br>  7 Sep",
+			"creneau": [
+				{
+					"conf": {
+						"label": "Mercredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "07:00"
+				},
+				{
+					"conf": {
+						"label": "Mercredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "08:00"
+				},
+				{
+					"conf": {
+						"label": "Mercredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "09:00"
+				},
+				{
+					"conf": {
+						"label": "Mercredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "10:00"
+				},
+				{
+					"conf": {
+						"label": "Mercredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "11:00"
+				},
+				{
+					"conf": {
+						"label": "Mercredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "12:00"
+				},
+				{
+					"conf": {
+						"label": "Mercredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "13:00"
+				},
+				{
+					"conf": {
+						"label": "Mercredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "14:00"
+				},
+				{
+					"conf": {
+						"label": "Mercredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "15:00"
+				},
+				{
+					"conf": {
+						"label": "Mercredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "16:00"
+				}
+			]
+		},
+		{
+			"label": "Thu. <br>  8 Sep",
+			"creneau": [
+				{
+					"conf": {
+						"label": "Jeudi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "07:00"
+				},
+				{
+					"conf": {
+						"label": "Jeudi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "08:00"
+				},
+				{
+					"conf": {
+						"label": "Jeudi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "09:00"
+				},
+				{
+					"conf": {
+						"label": "Jeudi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "10:00"
+				},
+				{
+					"conf": {
+						"label": "Jeudi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "11:00"
+				},
+				{
+					"conf": {
+						"label": "Jeudi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "12:00"
+				},
+				{
+					"conf": {
+						"label": "Jeudi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "13:00"
+				},
+				{
+					"conf": {
+						"label": "Jeudi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "14:00"
+				},
+				{
+					"conf": {
+						"label": "Jeudi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "15:00"
+				},
+				{
+					"conf": {
+						"label": "Jeudi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "16:00"
+				}
+			]
+		},
+		{
+			"label": "Fri. <br>  9 Sep",
+			"creneau": [
+				{
+					"conf": {
+						"label": "Vendredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "07:00"
+				},
+				{
+					"conf": {
+						"label": "Vendredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "08:00"
+				},
+				{
+					"conf": {
+						"label": "Vendredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "09:00"
+				},
+				{
+					"conf": {
+						"label": "Vendredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "10:00"
+				},
+				{
+					"conf": {
+						"label": "Vendredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "11:00"
+				},
+				{
+					"conf": {
+						"label": "Vendredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "12:00"
+				},
+				{
+					"conf": {
+						"label": "Vendredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "13:00"
+				},
+				{
+					"conf": {
+						"label": "Vendredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "14:00"
+				},
+				{
+					"conf": {
+						"label": "Vendredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "15:00"
+				},
+				{
+					"conf": {
+						"label": "Vendredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "16:00"
+				}
+			]
+		},
+		{
+			"label": "Sat. <br>  10 Sep",
+			"creneau": [
+				{
+					"conf": {
+						"label": "Samedi",
+						"status": 0,
+						"h_d": "9",
+						"m_d": "30",
+						"h_f": "15",
+						"m_f": "20"
+					},
+					"value": "09:30"
+				},
+				{
+					"conf": {
+						"label": "Samedi",
+						"status": 0,
+						"h_d": "9",
+						"m_d": "30",
+						"h_f": "15",
+						"m_f": "20"
+					},
+					"value": "10:30"
+				},
+				{
+					"conf": {
+						"label": "Samedi",
+						"status": 0,
+						"h_d": "9",
+						"m_d": "30",
+						"h_f": "15",
+						"m_f": "20"
+					},
+					"value": "11:30"
+				},
+				{
+					"conf": {
+						"label": "Samedi",
+						"status": 0,
+						"h_d": "9",
+						"m_d": "30",
+						"h_f": "15",
+						"m_f": "20"
+					},
+					"value": "12:30"
+				},
+				{
+					"conf": {
+						"label": "Samedi",
+						"status": 0,
+						"h_d": "9",
+						"m_d": "30",
+						"h_f": "15",
+						"m_f": "20"
+					},
+					"value": "13:30"
+				},
+				{
+					"conf": {
+						"label": "Samedi",
+						"status": 0,
+						"h_d": "9",
+						"m_d": "30",
+						"h_f": "15",
+						"m_f": "20"
+					},
+					"value": "14:30"
+				}
+			]
+		},
+		{
+			"label": "Sun. <br>  11 Sep",
+			"creneau": [
+				{
+					"conf": {
+						"label": "Dimanche",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "07:00"
+				},
+				{
+					"conf": {
+						"label": "Dimanche",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "08:00"
+				},
+				{
+					"conf": {
+						"label": "Dimanche",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "09:00"
+				},
+				{
+					"conf": {
+						"label": "Dimanche",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "10:00"
+				},
+				{
+					"conf": {
+						"label": "Dimanche",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "11:00"
+				},
+				{
+					"conf": {
+						"label": "Dimanche",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "12:00"
+				},
+				{
+					"conf": {
+						"label": "Dimanche",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "13:00"
+				},
+				{
+					"conf": {
+						"label": "Dimanche",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "14:00"
+				},
+				{
+					"conf": {
+						"label": "Dimanche",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "15:00"
+				},
+				{
+					"conf": {
+						"label": "Dimanche",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "16:00"
+				}
+			]
+		},
+		{
+			"label": "Mon. <br>  12 Sep",
+			"creneau": [
+				{
+					"conf": {
+						"label": "Lundi",
+						"status": 0,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "07:00"
+				},
+				{
+					"conf": {
+						"label": "Lundi",
+						"status": 0,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "08:00"
+				},
+				{
+					"conf": {
+						"label": "Lundi",
+						"status": 0,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "09:00"
+				},
+				{
+					"conf": {
+						"label": "Lundi",
+						"status": 0,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "10:00"
+				},
+				{
+					"conf": {
+						"label": "Lundi",
+						"status": 0,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "11:00"
+				},
+				{
+					"conf": {
+						"label": "Lundi",
+						"status": 0,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "12:00"
+				},
+				{
+					"conf": {
+						"label": "Lundi",
+						"status": 0,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "13:00"
+				},
+				{
+					"conf": {
+						"label": "Lundi",
+						"status": 0,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "14:00"
+				},
+				{
+					"conf": {
+						"label": "Lundi",
+						"status": 0,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "15:00"
+				},
+				{
+					"conf": {
+						"label": "Lundi",
+						"status": 0,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "16:00"
+				}
+			]
+		},
+		{
+			"label": "Tue. <br>  13 Sep",
+			"creneau": [
+				{
+					"conf": {
+						"label": "Mardi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "07:00"
+				},
+				{
+					"conf": {
+						"label": "Mardi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "08:00"
+				},
+				{
+					"conf": {
+						"label": "Mardi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "09:00"
+				},
+				{
+					"conf": {
+						"label": "Mardi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "10:00"
+				},
+				{
+					"conf": {
+						"label": "Mardi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "11:00"
+				},
+				{
+					"conf": {
+						"label": "Mardi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "12:00"
+				},
+				{
+					"conf": {
+						"label": "Mardi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "13:00"
+				},
+				{
+					"conf": {
+						"label": "Mardi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "14:00"
+				},
+				{
+					"conf": {
+						"label": "Mardi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "15:00"
+				},
+				{
+					"conf": {
+						"label": "Mardi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "16:00"
+				}
+			]
+		},
+		{
+			"label": "Wed. <br>  14 Sep",
+			"creneau": [
+				{
+					"conf": {
+						"label": "Mercredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "07:00"
+				},
+				{
+					"conf": {
+						"label": "Mercredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "08:00"
+				},
+				{
+					"conf": {
+						"label": "Mercredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "09:00"
+				},
+				{
+					"conf": {
+						"label": "Mercredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "10:00"
+				},
+				{
+					"conf": {
+						"label": "Mercredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "11:00"
+				},
+				{
+					"conf": {
+						"label": "Mercredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "12:00"
+				},
+				{
+					"conf": {
+						"label": "Mercredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "13:00"
+				},
+				{
+					"conf": {
+						"label": "Mercredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "14:00"
+				},
+				{
+					"conf": {
+						"label": "Mercredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "15:00"
+				},
+				{
+					"conf": {
+						"label": "Mercredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "16:00"
+				}
+			]
+		},
+		{
+			"label": "Thu. <br>  15 Sep",
+			"creneau": [
+				{
+					"conf": {
+						"label": "Jeudi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "07:00"
+				},
+				{
+					"conf": {
+						"label": "Jeudi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "08:00"
+				},
+				{
+					"conf": {
+						"label": "Jeudi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "09:00"
+				},
+				{
+					"conf": {
+						"label": "Jeudi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "10:00"
+				},
+				{
+					"conf": {
+						"label": "Jeudi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "11:00"
+				},
+				{
+					"conf": {
+						"label": "Jeudi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "12:00"
+				},
+				{
+					"conf": {
+						"label": "Jeudi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "13:00"
+				},
+				{
+					"conf": {
+						"label": "Jeudi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "14:00"
+				},
+				{
+					"conf": {
+						"label": "Jeudi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "15:00"
+				},
+				{
+					"conf": {
+						"label": "Jeudi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "16:00"
+				}
+			]
+		},
+		{
+			"label": "Fri. <br>  16 Sep",
+			"creneau": [
+				{
+					"conf": {
+						"label": "Vendredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "07:00"
+				},
+				{
+					"conf": {
+						"label": "Vendredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "08:00"
+				},
+				{
+					"conf": {
+						"label": "Vendredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "09:00"
+				},
+				{
+					"conf": {
+						"label": "Vendredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "10:00"
+				},
+				{
+					"conf": {
+						"label": "Vendredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "11:00"
+				},
+				{
+					"conf": {
+						"label": "Vendredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "12:00"
+				},
+				{
+					"conf": {
+						"label": "Vendredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "13:00"
+				},
+				{
+					"conf": {
+						"label": "Vendredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "14:00"
+				},
+				{
+					"conf": {
+						"label": "Vendredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "15:00"
+				},
+				{
+					"conf": {
+						"label": "Vendredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "16:00"
+				}
+			]
+		},
+		{
+			"label": "Sat. <br>  17 Sep",
+			"creneau": [
+				{
+					"conf": {
+						"label": "Samedi",
+						"status": 0,
+						"h_d": "9",
+						"m_d": "30",
+						"h_f": "15",
+						"m_f": "20"
+					},
+					"value": "09:30"
+				},
+				{
+					"conf": {
+						"label": "Samedi",
+						"status": 0,
+						"h_d": "9",
+						"m_d": "30",
+						"h_f": "15",
+						"m_f": "20"
+					},
+					"value": "10:30"
+				},
+				{
+					"conf": {
+						"label": "Samedi",
+						"status": 0,
+						"h_d": "9",
+						"m_d": "30",
+						"h_f": "15",
+						"m_f": "20"
+					},
+					"value": "11:30"
+				},
+				{
+					"conf": {
+						"label": "Samedi",
+						"status": 0,
+						"h_d": "9",
+						"m_d": "30",
+						"h_f": "15",
+						"m_f": "20"
+					},
+					"value": "12:30"
+				},
+				{
+					"conf": {
+						"label": "Samedi",
+						"status": 0,
+						"h_d": "9",
+						"m_d": "30",
+						"h_f": "15",
+						"m_f": "20"
+					},
+					"value": "13:30"
+				},
+				{
+					"conf": {
+						"label": "Samedi",
+						"status": 0,
+						"h_d": "9",
+						"m_d": "30",
+						"h_f": "15",
+						"m_f": "20"
+					},
+					"value": "14:30"
+				}
+			]
+		},
+		{
+			"label": "Sun. <br>  18 Sep",
+			"creneau": [
+				{
+					"conf": {
+						"label": "Dimanche",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "07:00"
+				},
+				{
+					"conf": {
+						"label": "Dimanche",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "08:00"
+				},
+				{
+					"conf": {
+						"label": "Dimanche",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "09:00"
+				},
+				{
+					"conf": {
+						"label": "Dimanche",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "10:00"
+				},
+				{
+					"conf": {
+						"label": "Dimanche",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "11:00"
+				},
+				{
+					"conf": {
+						"label": "Dimanche",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "12:00"
+				},
+				{
+					"conf": {
+						"label": "Dimanche",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "13:00"
+				},
+				{
+					"conf": {
+						"label": "Dimanche",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "14:00"
+				},
+				{
+					"conf": {
+						"label": "Dimanche",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "15:00"
+				},
+				{
+					"conf": {
+						"label": "Dimanche",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "16:00"
+				}
+			]
+		},
+		{
+			"label": "Mon. <br>  19 Sep",
+			"creneau": [
+				{
+					"conf": {
+						"label": "Lundi",
+						"status": 0,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "07:00"
+				},
+				{
+					"conf": {
+						"label": "Lundi",
+						"status": 0,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "08:00"
+				},
+				{
+					"conf": {
+						"label": "Lundi",
+						"status": 0,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "09:00"
+				},
+				{
+					"conf": {
+						"label": "Lundi",
+						"status": 0,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "10:00"
+				},
+				{
+					"conf": {
+						"label": "Lundi",
+						"status": 0,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "11:00"
+				},
+				{
+					"conf": {
+						"label": "Lundi",
+						"status": 0,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "12:00"
+				},
+				{
+					"conf": {
+						"label": "Lundi",
+						"status": 0,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "13:00"
+				},
+				{
+					"conf": {
+						"label": "Lundi",
+						"status": 0,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "14:00"
+				},
+				{
+					"conf": {
+						"label": "Lundi",
+						"status": 0,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "15:00"
+				},
+				{
+					"conf": {
+						"label": "Lundi",
+						"status": 0,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "16:00"
+				}
+			]
+		},
+		{
+			"label": "Tue. <br>  20 Sep",
+			"creneau": [
+				{
+					"conf": {
+						"label": "Mardi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "07:00"
+				},
+				{
+					"conf": {
+						"label": "Mardi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "08:00"
+				},
+				{
+					"conf": {
+						"label": "Mardi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "09:00"
+				},
+				{
+					"conf": {
+						"label": "Mardi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "10:00"
+				},
+				{
+					"conf": {
+						"label": "Mardi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "11:00"
+				},
+				{
+					"conf": {
+						"label": "Mardi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "12:00"
+				},
+				{
+					"conf": {
+						"label": "Mardi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "13:00"
+				},
+				{
+					"conf": {
+						"label": "Mardi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "14:00"
+				},
+				{
+					"conf": {
+						"label": "Mardi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "15:00"
+				},
+				{
+					"conf": {
+						"label": "Mardi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "16:00"
+				}
+			]
+		},
+		{
+			"label": "Wed. <br>  21 Sep",
+			"creneau": [
+				{
+					"conf": {
+						"label": "Mercredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "07:00"
+				},
+				{
+					"conf": {
+						"label": "Mercredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "08:00"
+				},
+				{
+					"conf": {
+						"label": "Mercredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "09:00"
+				},
+				{
+					"conf": {
+						"label": "Mercredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "10:00"
+				},
+				{
+					"conf": {
+						"label": "Mercredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "11:00"
+				},
+				{
+					"conf": {
+						"label": "Mercredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "12:00"
+				},
+				{
+					"conf": {
+						"label": "Mercredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "13:00"
+				},
+				{
+					"conf": {
+						"label": "Mercredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "14:00"
+				},
+				{
+					"conf": {
+						"label": "Mercredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "15:00"
+				},
+				{
+					"conf": {
+						"label": "Mercredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "16:00"
+				}
+			]
+		},
+		{
+			"label": "Thu. <br>  22 Sep",
+			"creneau": [
+				{
+					"conf": {
+						"label": "Jeudi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "07:00"
+				},
+				{
+					"conf": {
+						"label": "Jeudi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "08:00"
+				},
+				{
+					"conf": {
+						"label": "Jeudi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "09:00"
+				},
+				{
+					"conf": {
+						"label": "Jeudi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "10:00"
+				},
+				{
+					"conf": {
+						"label": "Jeudi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "11:00"
+				},
+				{
+					"conf": {
+						"label": "Jeudi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "12:00"
+				},
+				{
+					"conf": {
+						"label": "Jeudi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "13:00"
+				},
+				{
+					"conf": {
+						"label": "Jeudi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "14:00"
+				},
+				{
+					"conf": {
+						"label": "Jeudi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "15:00"
+				},
+				{
+					"conf": {
+						"label": "Jeudi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "16:00"
+				}
+			]
+		},
+		{
+			"label": "Fri. <br>  23 Sep",
+			"creneau": [
+				{
+					"conf": {
+						"label": "Vendredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "07:00"
+				},
+				{
+					"conf": {
+						"label": "Vendredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "08:00"
+				},
+				{
+					"conf": {
+						"label": "Vendredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "09:00"
+				},
+				{
+					"conf": {
+						"label": "Vendredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "10:00"
+				},
+				{
+					"conf": {
+						"label": "Vendredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "11:00"
+				},
+				{
+					"conf": {
+						"label": "Vendredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "12:00"
+				},
+				{
+					"conf": {
+						"label": "Vendredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "13:00"
+				},
+				{
+					"conf": {
+						"label": "Vendredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "14:00"
+				},
+				{
+					"conf": {
+						"label": "Vendredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "15:00"
+				},
+				{
+					"conf": {
+						"label": "Vendredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "16:00"
+				}
+			]
+		},
+		{
+			"label": "Sat. <br>  24 Sep",
+			"creneau": [
+				{
+					"conf": {
+						"label": "Samedi",
+						"status": 0,
+						"h_d": "9",
+						"m_d": "30",
+						"h_f": "15",
+						"m_f": "20"
+					},
+					"value": "09:30"
+				},
+				{
+					"conf": {
+						"label": "Samedi",
+						"status": 0,
+						"h_d": "9",
+						"m_d": "30",
+						"h_f": "15",
+						"m_f": "20"
+					},
+					"value": "10:30"
+				},
+				{
+					"conf": {
+						"label": "Samedi",
+						"status": 0,
+						"h_d": "9",
+						"m_d": "30",
+						"h_f": "15",
+						"m_f": "20"
+					},
+					"value": "11:30"
+				},
+				{
+					"conf": {
+						"label": "Samedi",
+						"status": 0,
+						"h_d": "9",
+						"m_d": "30",
+						"h_f": "15",
+						"m_f": "20"
+					},
+					"value": "12:30"
+				},
+				{
+					"conf": {
+						"label": "Samedi",
+						"status": 0,
+						"h_d": "9",
+						"m_d": "30",
+						"h_f": "15",
+						"m_f": "20"
+					},
+					"value": "13:30"
+				},
+				{
+					"conf": {
+						"label": "Samedi",
+						"status": 0,
+						"h_d": "9",
+						"m_d": "30",
+						"h_f": "15",
+						"m_f": "20"
+					},
+					"value": "14:30"
+				}
+			]
+		},
+		{
+			"label": "Sun. <br>  25 Sep",
+			"creneau": [
+				{
+					"conf": {
+						"label": "Dimanche",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "07:00"
+				},
+				{
+					"conf": {
+						"label": "Dimanche",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "08:00"
+				},
+				{
+					"conf": {
+						"label": "Dimanche",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "09:00"
+				},
+				{
+					"conf": {
+						"label": "Dimanche",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "10:00"
+				},
+				{
+					"conf": {
+						"label": "Dimanche",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "11:00"
+				},
+				{
+					"conf": {
+						"label": "Dimanche",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "12:00"
+				},
+				{
+					"conf": {
+						"label": "Dimanche",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "13:00"
+				},
+				{
+					"conf": {
+						"label": "Dimanche",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "14:00"
+				},
+				{
+					"conf": {
+						"label": "Dimanche",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "15:00"
+				},
+				{
+					"conf": {
+						"label": "Dimanche",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "16:00"
+				}
+			]
+		},
+		{
+			"label": "Mon. <br>  26 Sep",
+			"creneau": [
+				{
+					"conf": {
+						"label": "Lundi",
+						"status": 0,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "07:00"
+				},
+				{
+					"conf": {
+						"label": "Lundi",
+						"status": 0,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "08:00"
+				},
+				{
+					"conf": {
+						"label": "Lundi",
+						"status": 0,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "09:00"
+				},
+				{
+					"conf": {
+						"label": "Lundi",
+						"status": 0,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "10:00"
+				},
+				{
+					"conf": {
+						"label": "Lundi",
+						"status": 0,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "11:00"
+				},
+				{
+					"conf": {
+						"label": "Lundi",
+						"status": 0,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "12:00"
+				},
+				{
+					"conf": {
+						"label": "Lundi",
+						"status": 0,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "13:00"
+				},
+				{
+					"conf": {
+						"label": "Lundi",
+						"status": 0,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "14:00"
+				},
+				{
+					"conf": {
+						"label": "Lundi",
+						"status": 0,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "15:00"
+				},
+				{
+					"conf": {
+						"label": "Lundi",
+						"status": 0,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "16:00"
+				}
+			]
+		},
+		{
+			"label": "Tue. <br>  27 Sep",
+			"creneau": [
+				{
+					"conf": {
+						"label": "Mardi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "07:00"
+				},
+				{
+					"conf": {
+						"label": "Mardi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "08:00"
+				},
+				{
+					"conf": {
+						"label": "Mardi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "09:00"
+				},
+				{
+					"conf": {
+						"label": "Mardi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "10:00"
+				},
+				{
+					"conf": {
+						"label": "Mardi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "11:00"
+				},
+				{
+					"conf": {
+						"label": "Mardi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "12:00"
+				},
+				{
+					"conf": {
+						"label": "Mardi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "13:00"
+				},
+				{
+					"conf": {
+						"label": "Mardi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "14:00"
+				},
+				{
+					"conf": {
+						"label": "Mardi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "15:00"
+				},
+				{
+					"conf": {
+						"label": "Mardi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "16:00"
+				}
+			]
+		},
+		{
+			"label": "Wed. <br>  28 Sep",
+			"creneau": [
+				{
+					"conf": {
+						"label": "Mercredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "07:00"
+				},
+				{
+					"conf": {
+						"label": "Mercredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "08:00"
+				},
+				{
+					"conf": {
+						"label": "Mercredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "09:00"
+				},
+				{
+					"conf": {
+						"label": "Mercredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "10:00"
+				},
+				{
+					"conf": {
+						"label": "Mercredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "11:00"
+				},
+				{
+					"conf": {
+						"label": "Mercredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "12:00"
+				},
+				{
+					"conf": {
+						"label": "Mercredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "13:00"
+				},
+				{
+					"conf": {
+						"label": "Mercredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "14:00"
+				},
+				{
+					"conf": {
+						"label": "Mercredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "15:00"
+				},
+				{
+					"conf": {
+						"label": "Mercredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "16:00"
+				}
+			]
+		},
+		{
+			"label": "Thu. <br>  29 Sep",
+			"creneau": [
+				{
+					"conf": {
+						"label": "Jeudi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "07:00"
+				},
+				{
+					"conf": {
+						"label": "Jeudi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "08:00"
+				},
+				{
+					"conf": {
+						"label": "Jeudi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "09:00"
+				},
+				{
+					"conf": {
+						"label": "Jeudi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "10:00"
+				},
+				{
+					"conf": {
+						"label": "Jeudi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "11:00"
+				},
+				{
+					"conf": {
+						"label": "Jeudi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "12:00"
+				},
+				{
+					"conf": {
+						"label": "Jeudi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "13:00"
+				},
+				{
+					"conf": {
+						"label": "Jeudi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "14:00"
+				},
+				{
+					"conf": {
+						"label": "Jeudi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "15:00"
+				},
+				{
+					"conf": {
+						"label": "Jeudi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "16:00"
+				}
+			]
+		},
+		{
+			"label": "Fri. <br>  30 Sep",
+			"creneau": [
+				{
+					"conf": {
+						"label": "Vendredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "07:00"
+				},
+				{
+					"conf": {
+						"label": "Vendredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "08:00"
+				},
+				{
+					"conf": {
+						"label": "Vendredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "09:00"
+				},
+				{
+					"conf": {
+						"label": "Vendredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "10:00"
+				},
+				{
+					"conf": {
+						"label": "Vendredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "11:00"
+				},
+				{
+					"conf": {
+						"label": "Vendredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "12:00"
+				},
+				{
+					"conf": {
+						"label": "Vendredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "13:00"
+				},
+				{
+					"conf": {
+						"label": "Vendredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "14:00"
+				},
+				{
+					"conf": {
+						"label": "Vendredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "15:00"
+				},
+				{
+					"conf": {
+						"label": "Vendredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "16:00"
+				}
+			]
+		},
+		{
+			"label": "Sat. <br>  1 Oct",
+			"creneau": [
+				{
+					"conf": {
+						"label": "Samedi",
+						"status": 0,
+						"h_d": "9",
+						"m_d": "30",
+						"h_f": "15",
+						"m_f": "20"
+					},
+					"value": "09:30"
+				},
+				{
+					"conf": {
+						"label": "Samedi",
+						"status": 0,
+						"h_d": "9",
+						"m_d": "30",
+						"h_f": "15",
+						"m_f": "20"
+					},
+					"value": "10:30"
+				},
+				{
+					"conf": {
+						"label": "Samedi",
+						"status": 0,
+						"h_d": "9",
+						"m_d": "30",
+						"h_f": "15",
+						"m_f": "20"
+					},
+					"value": "11:30"
+				},
+				{
+					"conf": {
+						"label": "Samedi",
+						"status": 0,
+						"h_d": "9",
+						"m_d": "30",
+						"h_f": "15",
+						"m_f": "20"
+					},
+					"value": "12:30"
+				},
+				{
+					"conf": {
+						"label": "Samedi",
+						"status": 0,
+						"h_d": "9",
+						"m_d": "30",
+						"h_f": "15",
+						"m_f": "20"
+					},
+					"value": "13:30"
+				},
+				{
+					"conf": {
+						"label": "Samedi",
+						"status": 0,
+						"h_d": "9",
+						"m_d": "30",
+						"h_f": "15",
+						"m_f": "20"
+					},
+					"value": "14:30"
+				}
+			]
+		},
+		{
+			"label": "Sun. <br>  2 Oct",
+			"creneau": [
+				{
+					"conf": {
+						"label": "Dimanche",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "07:00"
+				},
+				{
+					"conf": {
+						"label": "Dimanche",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "08:00"
+				},
+				{
+					"conf": {
+						"label": "Dimanche",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "09:00"
+				},
+				{
+					"conf": {
+						"label": "Dimanche",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "10:00"
+				},
+				{
+					"conf": {
+						"label": "Dimanche",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "11:00"
+				},
+				{
+					"conf": {
+						"label": "Dimanche",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "12:00"
+				},
+				{
+					"conf": {
+						"label": "Dimanche",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "13:00"
+				},
+				{
+					"conf": {
+						"label": "Dimanche",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "14:00"
+				},
+				{
+					"conf": {
+						"label": "Dimanche",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "15:00"
+				},
+				{
+					"conf": {
+						"label": "Dimanche",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "16:00"
+				}
+			]
+		},
+		{
+			"label": "Mon. <br>  3 Oct",
+			"creneau": [
+				{
+					"conf": {
+						"label": "Lundi",
+						"status": 0,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "07:00"
+				},
+				{
+					"conf": {
+						"label": "Lundi",
+						"status": 0,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "08:00"
+				},
+				{
+					"conf": {
+						"label": "Lundi",
+						"status": 0,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "09:00"
+				},
+				{
+					"conf": {
+						"label": "Lundi",
+						"status": 0,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "10:00"
+				},
+				{
+					"conf": {
+						"label": "Lundi",
+						"status": 0,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "11:00"
+				},
+				{
+					"conf": {
+						"label": "Lundi",
+						"status": 0,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "12:00"
+				},
+				{
+					"conf": {
+						"label": "Lundi",
+						"status": 0,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "13:00"
+				},
+				{
+					"conf": {
+						"label": "Lundi",
+						"status": 0,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "14:00"
+				},
+				{
+					"conf": {
+						"label": "Lundi",
+						"status": 0,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "15:00"
+				},
+				{
+					"conf": {
+						"label": "Lundi",
+						"status": 0,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "16:00"
+				}
+			]
+		},
+		{
+			"label": "Tue. <br>  4 Oct",
+			"creneau": [
+				{
+					"conf": {
+						"label": "Mardi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "07:00"
+				},
+				{
+					"conf": {
+						"label": "Mardi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "08:00"
+				},
+				{
+					"conf": {
+						"label": "Mardi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "09:00"
+				},
+				{
+					"conf": {
+						"label": "Mardi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "10:00"
+				},
+				{
+					"conf": {
+						"label": "Mardi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "11:00"
+				},
+				{
+					"conf": {
+						"label": "Mardi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "12:00"
+				},
+				{
+					"conf": {
+						"label": "Mardi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "13:00"
+				},
+				{
+					"conf": {
+						"label": "Mardi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "14:00"
+				},
+				{
+					"conf": {
+						"label": "Mardi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "15:00"
+				},
+				{
+					"conf": {
+						"label": "Mardi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "16:00"
+				}
+			]
+		},
+		{
+			"label": "Wed. <br>  5 Oct",
+			"creneau": [
+				{
+					"conf": {
+						"label": "Mercredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "07:00"
+				},
+				{
+					"conf": {
+						"label": "Mercredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "08:00"
+				},
+				{
+					"conf": {
+						"label": "Mercredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "09:00"
+				},
+				{
+					"conf": {
+						"label": "Mercredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "10:00"
+				},
+				{
+					"conf": {
+						"label": "Mercredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "11:00"
+				},
+				{
+					"conf": {
+						"label": "Mercredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "12:00"
+				},
+				{
+					"conf": {
+						"label": "Mercredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "13:00"
+				},
+				{
+					"conf": {
+						"label": "Mercredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "14:00"
+				},
+				{
+					"conf": {
+						"label": "Mercredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "15:00"
+				},
+				{
+					"conf": {
+						"label": "Mercredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "16:00"
+				}
+			]
+		},
+		{
+			"label": "Thu. <br>  6 Oct",
+			"creneau": [
+				{
+					"conf": {
+						"label": "Jeudi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "07:00"
+				},
+				{
+					"conf": {
+						"label": "Jeudi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "08:00"
+				},
+				{
+					"conf": {
+						"label": "Jeudi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "09:00"
+				},
+				{
+					"conf": {
+						"label": "Jeudi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "10:00"
+				},
+				{
+					"conf": {
+						"label": "Jeudi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "11:00"
+				},
+				{
+					"conf": {
+						"label": "Jeudi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "12:00"
+				},
+				{
+					"conf": {
+						"label": "Jeudi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "13:00"
+				},
+				{
+					"conf": {
+						"label": "Jeudi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "14:00"
+				},
+				{
+					"conf": {
+						"label": "Jeudi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "15:00"
+				},
+				{
+					"conf": {
+						"label": "Jeudi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "16:00"
+				}
+			]
+		},
+		{
+			"label": "Fri. <br>  7 Oct",
+			"creneau": [
+				{
+					"conf": {
+						"label": "Vendredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "07:00"
+				},
+				{
+					"conf": {
+						"label": "Vendredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "08:00"
+				},
+				{
+					"conf": {
+						"label": "Vendredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "09:00"
+				},
+				{
+					"conf": {
+						"label": "Vendredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "10:00"
+				},
+				{
+					"conf": {
+						"label": "Vendredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "11:00"
+				},
+				{
+					"conf": {
+						"label": "Vendredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "12:00"
+				},
+				{
+					"conf": {
+						"label": "Vendredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "13:00"
+				},
+				{
+					"conf": {
+						"label": "Vendredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "14:00"
+				},
+				{
+					"conf": {
+						"label": "Vendredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "15:00"
+				},
+				{
+					"conf": {
+						"label": "Vendredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "16:00"
+				}
+			]
+		},
+		{
+			"label": "Sat. <br>  8 Oct",
+			"creneau": [
+				{
+					"conf": {
+						"label": "Samedi",
+						"status": 0,
+						"h_d": "9",
+						"m_d": "30",
+						"h_f": "15",
+						"m_f": "20"
+					},
+					"value": "09:30"
+				},
+				{
+					"conf": {
+						"label": "Samedi",
+						"status": 0,
+						"h_d": "9",
+						"m_d": "30",
+						"h_f": "15",
+						"m_f": "20"
+					},
+					"value": "10:30"
+				},
+				{
+					"conf": {
+						"label": "Samedi",
+						"status": 0,
+						"h_d": "9",
+						"m_d": "30",
+						"h_f": "15",
+						"m_f": "20"
+					},
+					"value": "11:30"
+				},
+				{
+					"conf": {
+						"label": "Samedi",
+						"status": 0,
+						"h_d": "9",
+						"m_d": "30",
+						"h_f": "15",
+						"m_f": "20"
+					},
+					"value": "12:30"
+				},
+				{
+					"conf": {
+						"label": "Samedi",
+						"status": 0,
+						"h_d": "9",
+						"m_d": "30",
+						"h_f": "15",
+						"m_f": "20"
+					},
+					"value": "13:30"
+				},
+				{
+					"conf": {
+						"label": "Samedi",
+						"status": 0,
+						"h_d": "9",
+						"m_d": "30",
+						"h_f": "15",
+						"m_f": "20"
+					},
+					"value": "14:30"
+				}
+			]
+		},
+		{
+			"label": "Sun. <br>  9 Oct",
+			"creneau": [
+				{
+					"conf": {
+						"label": "Dimanche",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "07:00"
+				},
+				{
+					"conf": {
+						"label": "Dimanche",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "08:00"
+				},
+				{
+					"conf": {
+						"label": "Dimanche",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "09:00"
+				},
+				{
+					"conf": {
+						"label": "Dimanche",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "10:00"
+				},
+				{
+					"conf": {
+						"label": "Dimanche",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "11:00"
+				},
+				{
+					"conf": {
+						"label": "Dimanche",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "12:00"
+				},
+				{
+					"conf": {
+						"label": "Dimanche",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "13:00"
+				},
+				{
+					"conf": {
+						"label": "Dimanche",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "14:00"
+				},
+				{
+					"conf": {
+						"label": "Dimanche",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "15:00"
+				},
+				{
+					"conf": {
+						"label": "Dimanche",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "16:00"
+				}
+			]
+		},
+		{
+			"label": "Mon. <br>  10 Oct",
+			"creneau": [
+				{
+					"conf": {
+						"label": "Lundi",
+						"status": 0,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "07:00"
+				},
+				{
+					"conf": {
+						"label": "Lundi",
+						"status": 0,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "08:00"
+				},
+				{
+					"conf": {
+						"label": "Lundi",
+						"status": 0,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "09:00"
+				},
+				{
+					"conf": {
+						"label": "Lundi",
+						"status": 0,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "10:00"
+				},
+				{
+					"conf": {
+						"label": "Lundi",
+						"status": 0,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "11:00"
+				},
+				{
+					"conf": {
+						"label": "Lundi",
+						"status": 0,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "12:00"
+				},
+				{
+					"conf": {
+						"label": "Lundi",
+						"status": 0,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "13:00"
+				},
+				{
+					"conf": {
+						"label": "Lundi",
+						"status": 0,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "14:00"
+				},
+				{
+					"conf": {
+						"label": "Lundi",
+						"status": 0,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "15:00"
+				},
+				{
+					"conf": {
+						"label": "Lundi",
+						"status": 0,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "16:00"
+				}
+			]
+		},
+		{
+			"label": "Tue. <br>  11 Oct",
+			"creneau": [
+				{
+					"conf": {
+						"label": "Mardi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "07:00"
+				},
+				{
+					"conf": {
+						"label": "Mardi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "08:00"
+				},
+				{
+					"conf": {
+						"label": "Mardi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "09:00"
+				},
+				{
+					"conf": {
+						"label": "Mardi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "10:00"
+				},
+				{
+					"conf": {
+						"label": "Mardi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "11:00"
+				},
+				{
+					"conf": {
+						"label": "Mardi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "12:00"
+				},
+				{
+					"conf": {
+						"label": "Mardi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "13:00"
+				},
+				{
+					"conf": {
+						"label": "Mardi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "14:00"
+				},
+				{
+					"conf": {
+						"label": "Mardi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "15:00"
+				},
+				{
+					"conf": {
+						"label": "Mardi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "16:00"
+				}
+			]
+		},
+		{
+			"label": "Wed. <br>  12 Oct",
+			"creneau": [
+				{
+					"conf": {
+						"label": "Mercredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "07:00"
+				},
+				{
+					"conf": {
+						"label": "Mercredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "08:00"
+				},
+				{
+					"conf": {
+						"label": "Mercredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "09:00"
+				},
+				{
+					"conf": {
+						"label": "Mercredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "10:00"
+				},
+				{
+					"conf": {
+						"label": "Mercredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "11:00"
+				},
+				{
+					"conf": {
+						"label": "Mercredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "12:00"
+				},
+				{
+					"conf": {
+						"label": "Mercredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "13:00"
+				},
+				{
+					"conf": {
+						"label": "Mercredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "14:00"
+				},
+				{
+					"conf": {
+						"label": "Mercredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "15:00"
+				},
+				{
+					"conf": {
+						"label": "Mercredi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "16:00"
+				}
+			]
+		},
+		{
+			"label": "Thu. <br>  13 Oct",
+			"creneau": [
+				{
+					"conf": {
+						"label": "Jeudi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "07:00"
+				},
+				{
+					"conf": {
+						"label": "Jeudi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "08:00"
+				},
+				{
+					"conf": {
+						"label": "Jeudi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "09:00"
+				},
+				{
+					"conf": {
+						"label": "Jeudi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "10:00"
+				},
+				{
+					"conf": {
+						"label": "Jeudi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "11:00"
+				},
+				{
+					"conf": {
+						"label": "Jeudi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "12:00"
+				},
+				{
+					"conf": {
+						"label": "Jeudi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "13:00"
+				},
+				{
+					"conf": {
+						"label": "Jeudi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "14:00"
+				},
+				{
+					"conf": {
+						"label": "Jeudi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "15:00"
+				},
+				{
+					"conf": {
+						"label": "Jeudi",
+						"status": 1,
+						"h_d": "7",
+						"m_d": "0",
+						"h_f": "17",
+						"m_f": "0"
+					},
+					"value": "16:00"
+				}
+			]
+		}
+	],
+	"entityType": {
+		"uuid": "71f10891-153d-45a2-aa55-94056ba85044",
+		"langcode": "en",
+		"status": true,
+		"dependencies": [],
+		"id": "node_article_3",
+		"label": "ffdf (node.article)",
+		"jours": [
+			{
+				"label": "Dimanche",
+				"status": 1,
+				"h_d": "7",
+				"m_d": "0",
+				"h_f": "17",
+				"m_f": "0"
+			},
+			{
+				"label": "Lundi",
+				"status": 0,
+				"h_d": "7",
+				"m_d": "0",
+				"h_f": "17",
+				"m_f": "0"
+			},
+			{
+				"label": "Mardi",
+				"status": 1,
+				"h_d": "7",
+				"m_d": "0",
+				"h_f": "17",
+				"m_f": "0"
+			},
+			{
+				"label": "Mercredi",
+				"status": 1,
+				"h_d": "7",
+				"m_d": "0",
+				"h_f": "17",
+				"m_f": "0"
+			},
+			{
+				"label": "Jeudi",
+				"status": 1,
+				"h_d": "7",
+				"m_d": "0",
+				"h_f": "17",
+				"m_f": "0"
+			},
+			{
+				"label": "Vendredi",
+				"status": 1,
+				"h_d": "7",
+				"m_d": "0",
+				"h_f": "17",
+				"m_f": "0"
+			},
+			{
+				"label": "Samedi",
+				"status": 0,
+				"h_d": "9",
+				"m_d": "30",
+				"h_f": "15",
+				"m_f": "20"
+			}
+		],
+		"disabled_dates": [],
+		"disabled_periode": [],
+		"interval": 60,
+		"decallage": 0,
+		"number_week": 6
+	}
+}

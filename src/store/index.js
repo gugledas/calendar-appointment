@@ -15,8 +15,6 @@ export default new Vuex.Store({
 	state: state,
 	getters: {
 		daysCreneaux(state) {
-			let newtab = config.formatValidDay(state.creneaux_datas.jours);
-			console.log("newtab", newtab);
 			if (state.creneaux_datas.jours) {
 				return state.creneaux_datas.jours;
 			}

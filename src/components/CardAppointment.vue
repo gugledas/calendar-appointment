@@ -54,8 +54,7 @@
 							v-for="(creneaux, index) in daysCreneaux"
 							:key="index"
 						>
-							<date-hour-column :creneaux="creneaux.creneau">
-							</date-hour-column>
+							<date-hour-column :creneaux="creneaux"> </date-hour-column>
 						</div>
 					</div>
 				</div>
@@ -177,37 +176,18 @@ export default {
 	methods: {
 		/** *
 		 *  @param {object} days represente les information du jours
-		 *  @param {string} object.label le labe du jour
-		 *  @param {object} object.creneau liste tout les creneaux du jour avec avec les informations d'affichage
-		 * */
-		showCreneauOfDays() {},
-		/** *
-		 *  @param {object} days represente les information du jours
 		 *  @param {string} object.value la date du jour au format "Fri 2 Sep"
 		 * */
 		isCurrentDay(days) {
 			let real_Date = days.value;
-			let today = moment().format("ddd D MMM");
-			//console.log("re", real_Date, "----", today);
+			let today = moment().format("ddd D MMM yyyy");
+			console.log("re", real_Date, "----", today, today.includes(real_Date));
 			return today.includes(real_Date);
-		},
-		/** *
-		 *  @param {string} date
-		 * */
-		formatToValidDate(date) {
-			let realDate = "";
-			if (date) {
-				let reg = date.split("<br>").join(" ").split(".");
-
-				realDate = reg.join("").replace("     ", " ");
-			}
-			return realDate;
 		},
 	},
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss">
 .date-hours-content {
 	margin-top: 5px;
@@ -278,6 +258,11 @@ export default {
 		cursor: pointer;
 		&:hover {
 			font-weight: bold;
+		}
+		&--disabled {
+			color: rgb(156, 156, 156);
+			pointer-events: none;
+			text-decoration: line-through;
 		}
 	}
 }

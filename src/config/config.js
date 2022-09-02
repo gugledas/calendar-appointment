@@ -1,5 +1,4 @@
 import axios from "axios";
-import moment from "moment";
 const config = {
 	//	basic_url: "http://d9-test.kksa",
 	basic_url: "http://wb-horizon.kksa",
@@ -26,31 +25,6 @@ const config = {
 		//let datas = await this.load(url);
 		let datas = this.defaultDatas;
 		return datas;
-	},
-	/**
-	 *
-	 * @params {Array} jours
-	 *  Supprimes les jours dépassées du tableau
-	 */
-	async formatValidDay(jours) {
-		let newtableau = [];
-		//let today = moment().format("ddd D MMM");
-		//	let timestapToday = moment(today);
-		if (jours && jours.length) {
-			newtableau = jours.filter((jour) => {
-				//let timestapDay = moment(jour.value);
-				console.log(
-					"timestapDay",
-					jour.value,
-					"---",
-					moment().isSameOrBefore(jour.value)
-				);
-				//if (timestapDay >= timestapToday) {
-				return jour;
-				//	}
-			});
-		}
-		return newtableau;
 	},
 
 	defaultDatas: {

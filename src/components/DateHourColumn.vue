@@ -1,6 +1,11 @@
 <template>
 	<div class="dr-colum">
-		<div class="days_hours" v-for="(creneau, index) in creneaux" :key="index">
+		<div
+			class="days_hours"
+			:class="{ 'days_hours--disabled': dayDisabled(creneau.conf) }"
+			v-for="(creneau, index) in creneaux.creneau"
+			:key="index"
+		>
 			{{ creneau.value }}
 		</div>
 	</div>
@@ -11,10 +16,10 @@ export default {
 	name: "DateHourColumn",
 	props: {
 		creneaux: {
-			type: Array,
+			type: Object,
 			required: true,
 			default: function () {
-				return [];
+				return {};
 			},
 		},
 	},
@@ -22,11 +27,20 @@ export default {
 	data() {
 		return {};
 	},
-	mounted() {
-		//	console.log("cern", this.creneaux);
-	},
+	mounted() {},
 	computed: {},
-	methods: {},
+	methods: {
+		/**
+		 * @param {Number,Boolean} status Réprésente l'état du créneaux
+		 */
+		dayDisabled(status) {
+			//console.log(status);
+			if (status.status) {
+				return false;
+			}
+			return true;
+		},
+	},
 };
 </script>
 

@@ -1,6 +1,6 @@
 <template>
 	<div class="home">
-		<CardAppointment msg="Welcome to Your Vue.js App" />
+		<CardAppointment />
 	</div>
 </template>
 
@@ -14,18 +14,9 @@ export default {
 		CardAppointment,
 	},
 	data() {
-		return {
-			slide: 0,
-			sliding: null,
-		};
+		return {};
 	},
-	methods: {
-		onSlideStart() {
-			this.sliding = true;
-		},
-		onSlideEnd() {
-			this.sliding = false;
-		},
-	},
+	methods: {},
 };
 </script>
+<style lang="scss"></style>

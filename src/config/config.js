@@ -2,7 +2,7 @@ import axios from "axios";
 const config = {
 	//	basic_url: "http://d9-test.kksa",
 	basic_url: "http://wb-horizon.kksa",
-	/* *
+	/**
 	 * @params {string} urlRequest
 	 */
 	async load(urlRequest) {
@@ -21,9 +21,9 @@ const config = {
 	/**
 	 * @params {string} url
 	 */
-	async datas() {
-		//let datas = await this.load(url);
-		let datas = this.defaultDatas;
+	async datas(url) {
+		let datas = await this.load(url);
+		//let datas = this.defaultDatas;
 		return datas;
 	},
 

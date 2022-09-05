@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="card-appoint">
 		<div class="container">
 			<div class="date-hours-title">2. Choix de la date & heure</div>
 			<div v-if="!$store.state.currentSelectedDate.editing">
@@ -73,8 +73,14 @@
 				<b-spinner style="width: 3rem; height: 3rem" variant="dark"></b-spinner>
 			</div>
 		</div>
-		<div v-if="$store.getters.canRegister">
-			<login-registration></login-registration>
+		<div v-if="$store.getters.canRegister" class="container">
+			<div class="d-none"><FormLogin></FormLogin></div>
+			<div class="date-hours-title">3. Identification</div>
+			<loginRegister
+				class="login-register"
+				action_after_login="emit_even"
+				model_register_form="generate_password"
+			></loginRegister>
 		</div>
 	</div>
 </template>
@@ -82,7 +88,8 @@
 <script>
 import { mapState } from "vuex";
 import { mapGetters } from "vuex";
-
+import { loginRegister } from "drupal-vuejs";
+import users from "../config/users";
 /* moment js */
 import moment from "moment";
 /*  */
@@ -95,10 +102,15 @@ import "swiper/css";
 /* import des composants */
 import DateHourColumn from "./DateHourColumn.vue";
 import CardSelectedDate from "./CardSelectedDate.vue";
-import LoginRegistration from "./LoginRegistration.vue";
+import FormLogin from "./FormLogin.vue";
 
 export default {
-	components: { DateHourColumn, CardSelectedDate, LoginRegistration },
+	components: {
+		DateHourColumn,
+		CardSelectedDate,
+		FormLogin,
+		loginRegister,
+	},
 	name: "CardAppointment",
 	props: {
 		msg: String,
@@ -195,6 +207,18 @@ export default {
 			let today = moment().format("ddd D MMM yyyy");
 			//console.log("re", real_Date, "----", today, today.includes(real_Date));
 			return today.includes(real_Date);
+		},
+		check_if_user_connected() {
+			document.addEventListener(
+				"login_rx_vuejs__user_is_login",
+				() => {
+					console.log("user login");
+					users.getCurrentUser().then((user) => {
+						console.log("user login--", user);
+					});
+				},
+				false
+			);
 		},
 	},
 };
@@ -346,5 +370,39 @@ swiper-rows {
 	overflow: hidden;
 	list-style: none;
 	z-index: 1;
+}
+.card-appoint {
+	.login-register {
+		background-color: rgb(255, 255, 255);
+		box-shadow: rgb(60 66 87 / 4%) 0px 0px 5px 0px,
+			rgb(0 0 0 / 4%) 0px 0px 10px 0px;
+		margin-bottom: 20px;
+		padding-bottom: 40px;
+	}
+	a {
+		cursor: pointer;
+		text-decoration: underline;
+		font-weight: normal;
+		color: #000;
+		transition: 0.3s;
+		text-transform: capitalize;
+		&:hover {
+			text-decoration: none;
+			color: rgb(236, 137, 90);
+		}
+	}
+	.login-page {
+		max-width: initial;
+		min-height: initial;
+
+		.spinner-grow {
+			position: absolute;
+		}
+		.block-center {
+			background-color: rgb(255, 255, 255);
+			box-shadow: initial;
+			position: relative;
+		}
+	}
 }
 </style>

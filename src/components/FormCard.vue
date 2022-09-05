@@ -162,7 +162,7 @@ export default {
 	.form-input {
 		position: relative;
 		width: 100%;
-		margin-bottom: 25px;
+		margin-bottom: 20px;
 		a {
 			color: rgb(0, 0, 0);
 			cursor: pointer;
@@ -187,8 +187,6 @@ export default {
 		}
 	}
 	.show-pass {
-		.svg {
-		}
 		svg {
 			cursor: pointer;
 		}

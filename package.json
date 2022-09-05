@@ -11,11 +11,13 @@
 		"@vue/cli-plugin-babel": "^5.0.8",
 		"bootstrap-vue": "^2.1.0",
 		"core-js": "^3.8.3",
+		"drupal-vuejs": "file:../drupal-vuejs",
 		"moment": "^2.29.4",
 		"swiper": "^8.3.2",
 		"vue": "^2.7.10",
 		"vue-router": "^3.5.1",
-		"vuex": "^3.6.2"
+		"vuex": "^3.6.2",
+		"wbuutilities": "file:../wbuutilities"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.12.16",

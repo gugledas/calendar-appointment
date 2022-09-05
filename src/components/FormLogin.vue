@@ -50,6 +50,7 @@
 					</div>
 				</div>
 			</div>
+			a
 		</div>
 	</div>
 </template>
@@ -57,6 +58,7 @@
 <script>
 import { mapState } from "vuex";
 import FormCard from "./FormCard.vue";
+
 export default {
 	components: { FormCard },
 	name: "DateHourColumn",

@@ -15,6 +15,7 @@ const state = {
 	connected: false,
 	alreadyConnected: false,
 	urlCreneaux: "/booking-manager/api/",
+	saveUrl: "/booking-manager/save/rdv/",
 	creneauIsLoading: false,
 	currentSelectedDate: {
 		text: "En attente",
@@ -36,15 +37,14 @@ export default new Vuex.Store({
 			if (state.currentSelectedDate.value !== "") return true;
 			return false;
 		},
-		urlPath(state) {
-			let url = state.urlCreneaux;
+		urlPath() {
 			let endpoint = window.location.pathname
 				.split("/")
 				.filter((el) => el.length)
 				.splice(-2)
 				.join("/");
-			if (endpoint.length > 2) return url + endpoint;
-			return url;
+			if (endpoint.length > 2) return endpoint;
+			return "";
 		},
 	},
 	mutations: {
@@ -72,12 +72,15 @@ export default new Vuex.Store({
 		 * @param {string} url
 		 */
 		async getCreneauxDatas(context) {
+			let url = context.state.urlCreneaux;
 			context.commit("SET_LOADING", true);
-			console.log("url", context.getters.urlPath);
-			let datas = await config.get(context.getters.urlPath);
+			//console.log("url", context.getters.urlPath);
+			let datas = await config.get(url + context.getters.urlPath);
 			console.log("url", datas);
 			context.commit("GET_CRENEAUX_DATAS", datas.data.data_creneaux);
-			context.commit("SET_LOADING", false);
+			setTimeout(() => {
+				context.commit("SET_LOADING", false);
+			}, 2000);
 			/* set rdvDatas */
 			if (datas && datas.data && datas.data.data_to_rdv) {
 				let bdDatas = datas.data.data_to_rdv;
@@ -85,7 +88,7 @@ export default new Vuex.Store({
 				dts.prix = bdDatas.field_prix[0].value;
 				dts.title = bdDatas.title[0].value;
 				dts.duree = bdDatas.field_duree[0].value;
-				console.log("dts", dts);
+				//console.log("dts", dts);
 				context.commit("SET_RDV_DATAS", dts);
 			}
 		},
@@ -103,6 +106,17 @@ export default new Vuex.Store({
 			if (already) {
 				context.commit("SET_ALREDY_CONNECTED", already);
 			}
+		},
+		saveDatasCreneauSelected(context, datas) {
+			let url = context.state.saveUrl;
+			config
+				.get(url + context.getters.urlPath, datas)
+				.then((res) => {
+					console.log("reponse save", res);
+				})
+				.catch((err) => {
+					console.error("reponse save", err);
+				});
 		},
 	},
 	modules: {},

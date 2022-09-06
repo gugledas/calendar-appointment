@@ -11,7 +11,9 @@
 				Qui vous coûteras <strong>{{ $store.state.rdv_datas.prix }} </strong>.
 			</div>
 			<div>
-				<button block class="btn-regist">Confirmer la réservation</button>
+				<button block class="btn-regist" @click="saveDatas">
+					Confirmer la réservation
+				</button>
 			</div>
 		</div>
 	</div>
@@ -27,7 +29,11 @@ export default {
 	},
 	mounted() {},
 	computed: {},
-	methods: {},
+	methods: {
+		saveDatas() {
+			this.$store.dispatch("saveDatasCreneauSelected");
+		},
+	},
 };
 </script>
 

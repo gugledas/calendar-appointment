@@ -1,15 +1,19 @@
 <template>
 	<div class="card-appoint">
 		<div class="container">
-			<div v-if="$store.state.rdv_datas.title.length">
+			<div>
 				<service-choose></service-choose>
 			</div>
 			<div class="date-hours-title">2. Choix de la date & heure</div>
 			<div v-show="!$store.state.currentSelectedDate.editing">
 				<card-selected-date></card-selected-date>
 			</div>
-			<div v-show="$store.state.currentSelectedDate.editing">
-				<div class="date-hours-content" v-show="!isLoading">
+
+			<div>
+				<div
+					class="date-hours-content"
+					v-show="$store.state.currentSelectedDate.editing && !isLoading"
+				>
 					<div class="content-header">
 						<div class="date-header swiper-creneau">
 							<div class="swiper-wrapper">
@@ -144,86 +148,6 @@ export default {
 		return {};
 	},
 	mounted() {
-		new Swiper(".swiper-creneau", {
-			speed: 600,
-			modules: [Navigation, Pagination],
-			pagination: {
-				el: ".swiper-pagination",
-			},
-			navigation: {
-				nextEl: ".nav-next",
-				prevEl: ".nav-prev",
-			},
-			slidesPerView: 1,
-			slidesPerGroup: 1,
-			allowTouchMove: false,
-			spaceBetween: 30,
-			loop: false,
-			breakpoints: {
-				377: {
-					slidesPerView: 2,
-					slidesPerGroup: 2,
-				},
-				569: {
-					slidesPerView: 3,
-					slidesPerGroup: 3,
-				},
-				769: {
-					slidesPerView: 4,
-					slidesPerGroup: 4,
-				},
-				993: {
-					slidesPerView: 5,
-					slidesPerGroup: 5,
-				},
-				1200: {
-					slidesPerView: 6,
-					slidesPerGroup: 6,
-				},
-			},
-		});
-		new Swiper(".swiper-rows", {
-			speed: 600,
-			modules: [Navigation, Pagination],
-			pagination: {
-				el: ".swiper-pagination",
-			},
-			navigation: {
-				nextEl: ".nav-next",
-				prevEl: ".nav-prev",
-			},
-			effect: "fade",
-			fadeEffect: {
-				crossFade: true,
-			},
-			slidesPerView: 1,
-			slidesPerGroup: 1,
-			allowTouchMove: false,
-			loop: false,
-			spaceBetween: 30,
-			breakpoints: {
-				377: {
-					slidesPerView: 2,
-					slidesPerGroup: 2,
-				},
-				569: {
-					slidesPerView: 3,
-					slidesPerGroup: 3,
-				},
-				769: {
-					slidesPerView: 4,
-					slidesPerGroup: 4,
-				},
-				993: {
-					slidesPerView: 5,
-					slidesPerGroup: 5,
-				},
-				1200: {
-					slidesPerView: 6,
-					slidesPerGroup: 6,
-				},
-			},
-		});
 		this.check_if_user_connected();
 		users.getCurrentUser().then((user) => {
 			console.log("user login--", user);
@@ -231,13 +155,20 @@ export default {
 				this.$store.dispatch("setConnected", true, true);
 			}
 		});
+		let inter = setInterval(() => {
+			if (this.daysCreneaux.length) {
+				console.log("aattat", inter);
+				this.editSwiper();
+				clearInterval(inter);
+			}
+		}, 100);
+		//this.editSwiper();
 	},
 	computed: {
 		...mapState({ isLoading: "creneauIsLoading" }),
 		...mapGetters(["daysCreneaux"]),
 	},
 	methods: {
-		emit_even() {},
 		/** *
 		 *  @param {object} days represente les information du jours
 		 *  @param {string} object.value la date du jour au format "Fri 2 Sep"
@@ -246,6 +177,7 @@ export default {
 			let real_Date = days.value;
 			let today = moment().format("ddd D MMM yyyy");
 			//console.log("re", real_Date, "----", today, today.includes(real_Date));
+
 			return today.includes(real_Date);
 		},
 		check_if_user_connected() {
@@ -263,6 +195,88 @@ export default {
 				},
 				false
 			);
+		},
+		editSwiper() {
+			new Swiper(".swiper-creneau", {
+				speed: 600,
+				modules: [Navigation, Pagination],
+				pagination: {
+					el: ".swiper-pagination",
+				},
+				navigation: {
+					nextEl: ".nav-next",
+					prevEl: ".nav-prev",
+				},
+				slidesPerView: 1,
+				slidesPerGroup: 1,
+				allowTouchMove: false,
+				spaceBetween: 30,
+				loop: false,
+				breakpoints: {
+					377: {
+						slidesPerView: 2,
+						slidesPerGroup: 2,
+					},
+					569: {
+						slidesPerView: 3,
+						slidesPerGroup: 3,
+					},
+					769: {
+						slidesPerView: 4,
+						slidesPerGroup: 4,
+					},
+					993: {
+						slidesPerView: 5,
+						slidesPerGroup: 5,
+					},
+					1200: {
+						slidesPerView: 6,
+						slidesPerGroup: 6,
+					},
+				},
+			});
+			new Swiper(".swiper-rows", {
+				speed: 600,
+				modules: [Navigation, Pagination],
+				pagination: {
+					el: ".swiper-pagination",
+				},
+				navigation: {
+					nextEl: ".nav-next",
+					prevEl: ".nav-prev",
+				},
+				effect: "fade",
+				fadeEffect: {
+					crossFade: true,
+				},
+				slidesPerView: 1,
+				slidesPerGroup: 1,
+				allowTouchMove: false,
+				loop: false,
+				spaceBetween: 30,
+				breakpoints: {
+					377: {
+						slidesPerView: 2,
+						slidesPerGroup: 2,
+					},
+					569: {
+						slidesPerView: 3,
+						slidesPerGroup: 3,
+					},
+					769: {
+						slidesPerView: 4,
+						slidesPerGroup: 4,
+					},
+					993: {
+						slidesPerView: 5,
+						slidesPerGroup: 5,
+					},
+					1200: {
+						slidesPerView: 6,
+						slidesPerGroup: 6,
+					},
+				},
+			});
 		},
 	},
 };

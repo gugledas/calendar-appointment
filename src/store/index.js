@@ -121,7 +121,7 @@ export default new Vuex.Store({
 			};
 			console.log("datasave", data);
 			config
-				.get(context.getters.urlPath + url, data)
+				.get(context.state.urlCreneaux + url, data)
 				.then((res) => {
 					console.log("reponse save", res);
 					alert("Reservation ok");

@@ -11,6 +11,7 @@ const state = {
 		title: "",
 		prix: "",
 		duree: "",
+		type: "",
 	},
 	connected: false,
 	alreadyConnected: false,
@@ -21,6 +22,7 @@ const state = {
 		text: "En attente",
 		value: "",
 		editing: true,
+		date: "",
 	},
 };
 
@@ -88,6 +90,7 @@ export default new Vuex.Store({
 				dts.prix = bdDatas.field_prix[0].value;
 				dts.title = bdDatas.title[0].value;
 				dts.duree = bdDatas.field_duree[0].value;
+				dts.type = bdDatas.type[0].value;
 				//console.log("dts", dts);
 				context.commit("SET_RDV_DATAS", dts);
 			}
@@ -101,18 +104,27 @@ export default new Vuex.Store({
 		setSelectedCreneau(context, datas) {
 			context.commit("SET_SELECTED_CRENEAUX", datas);
 		},
-		setConnected(context, datas, already) {
-			context.commit("SET_CONNECTED", datas);
-			if (already) {
-				context.commit("SET_ALREDY_CONNECTED", already);
+		setConnected(context, datas) {
+			context.commit("SET_CONNECTED", datas.connected);
+			//console.log("tasse", datas, "---");
+			if (datas.already) {
+				context.commit("SET_ALREDY_CONNECTED", datas.already);
 			}
 		},
-		saveDatasCreneauSelected(context, datas) {
-			let url = context.state.saveUrl;
+		saveDatasCreneauSelected(context) {
+			let url = context.getters.urlPath;
+			let data = {
+				entity_type_id: url.split("/")[0],
+				entity_id: url.split("/")[1],
+				creneaux: context.state.currentSelectedDate.value,
+				date: context.state.currentSelectedDate.date,
+			};
+			console.log("datasave", data);
 			config
-				.get(url + context.getters.urlPath, datas)
+				.get(context.getters.urlPath + url, data)
 				.then((res) => {
 					console.log("reponse save", res);
+					alert("Reservation ok");
 				})
 				.catch((err) => {
 					console.error("reponse save", err);

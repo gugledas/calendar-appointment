@@ -63,6 +63,7 @@ export default {
 				text: `${weekDays} ${dayNumber} ${month} ${year} à ${creneauTime.value}`,
 				value: creneauTime.value,
 				editing: false,
+				date: this.creneaux.value,
 			};
 			this.$store.dispatch("setSelectedCreneau", datas);
 			window.scrollTo(0, 400);

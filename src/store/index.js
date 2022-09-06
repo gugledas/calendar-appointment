@@ -9,11 +9,11 @@ const state = {
 	creneaux_datas: [],
 	rdv_datas: {
 		title: "",
-		prix: "A partir de 30€",
-		body: "champoin mélangeur et de tout ce qui viendra",
-		duree: "1h30min",
+		prix: "",
+		duree: "",
 	},
-
+	connected: false,
+	alreadyConnected: false,
 	urlCreneaux: "/booking-manager/api/",
 	creneauIsLoading: false,
 	currentSelectedDate: {
@@ -60,6 +60,12 @@ export default new Vuex.Store({
 		SET_RDV_DATAS(state, datas) {
 			state.rdv_datas = datas;
 		},
+		SET_CONNECTED(state, datas) {
+			state.connected = datas;
+		},
+		SET_ALREDY_CONNECTED(state, datas) {
+			state.alreadyConnected = datas;
+		},
 	},
 	actions: {
 		/**   récupère les données du créneaux en BD
@@ -79,7 +85,6 @@ export default new Vuex.Store({
 				dts.prix = bdDatas.field_prix[0].value;
 				dts.title = bdDatas.title[0].value;
 				dts.duree = bdDatas.field_duree[0].value;
-				dts.body = bdDatas.body[0].value;
 				console.log("dts", dts);
 				context.commit("SET_RDV_DATAS", dts);
 			}
@@ -92,6 +97,12 @@ export default new Vuex.Store({
 		 */
 		setSelectedCreneau(context, datas) {
 			context.commit("SET_SELECTED_CRENEAUX", datas);
+		},
+		setConnected(context, datas, already) {
+			context.commit("SET_CONNECTED", datas);
+			if (already) {
+				context.commit("SET_ALREDY_CONNECTED", already);
+			}
 		},
 	},
 	modules: {},

@@ -1,7 +1,9 @@
 <template>
 	<div class="card-appoint">
 		<div class="container">
-			<service-choose></service-choose>
+			<div v-if="$store.state.rdv_datas.title.length">
+				<service-choose></service-choose>
+			</div>
 			<div class="date-hours-title">2. Choix de la date & heure</div>
 			<div v-show="!$store.state.currentSelectedDate.editing">
 				<card-selected-date></card-selected-date>
@@ -74,7 +76,10 @@
 				<b-spinner style="width: 3rem; height: 3rem" variant="dark"></b-spinner>
 			</div>
 		</div>
-		<div v-if="$store.getters.canRegister" class="container">
+		<div
+			v-if="$store.getters.canRegister && !$store.state.connected"
+			class="container"
+		>
 			<div class="d-none"><FormLogin></FormLogin></div>
 			<div class="date-hours-title">3. Identification</div>
 			<loginRegister
@@ -83,8 +88,20 @@
 				model_register_form="generate_password"
 			></loginRegister>
 		</div>
-		<div class="container">
+		<div
+			v-if="$store.state.connected && !$store.state.alreadyConnected"
+			class="container"
+		>
+			<div class="date-hours-title">3. Identification</div>
+			<div class="options-content">
+				<div class="card-options">
+					<div class="co-title">Connected!</div>
+				</div>
+			</div>
+		</div>
+		<div class="container" v-show="$store.state.connected">
 			<div class="date-hours-title">Final</div>
+			<recapitulation-options></recapitulation-options>
 		</div>
 	</div>
 </template>
@@ -109,6 +126,7 @@ import DateHourColumn from "./DateHourColumn.vue";
 import CardSelectedDate from "./CardSelectedDate.vue";
 import FormLogin from "./FormLogin.vue";
 import ServiceChoose from "./ServiceChoose.vue";
+import RecapitulationOptions from "./RecapitulationOptions.vue";
 
 export default {
 	components: {
@@ -117,6 +135,7 @@ export default {
 		FormLogin,
 		loginRegister,
 		ServiceChoose,
+		RecapitulationOptions,
 	},
 	name: "CardAppointment",
 	props: {},
@@ -205,9 +224,12 @@ export default {
 				},
 			},
 		});
-		users.TestDomain;
-		users.getCurrentUser().then((res) => {
-			console.log("user", res);
+		this.check_if_user_connected();
+		users.getCurrentUser().then((user) => {
+			console.log("user login--", user);
+			if (user) {
+				this.$store.dispatch("setConnected", true, true);
+			}
 		});
 	},
 	computed: {
@@ -227,12 +249,16 @@ export default {
 			return today.includes(real_Date);
 		},
 		check_if_user_connected() {
+			console.log("user login");
 			document.addEventListener(
 				"login_rx_vuejs__user_is_login",
 				() => {
 					console.log("user login");
 					users.getCurrentUser().then((user) => {
 						console.log("user login--", user);
+						if (user) {
+							this.$store.dispatch("setConnected", true);
+						}
 					});
 				},
 				false

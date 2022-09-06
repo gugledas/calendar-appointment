@@ -1,13 +1,12 @@
 {
 	"name": "calendar-appointment",
 	"version": "0.1.0",
+	"description": "Module permettant de choisir des créneaux de réservation",
 	"private": true,
 	"scripts": {
 		"serve": "vue-cli-service serve",
 		"build": "vue-cli-service build",
-		"lint": "vue-cli-service lint",
-		"Dev": "vue-cli-service build --mode development  --dest files --target lib --name priseRdv 'src/prod.js'",
-		"Prod": "vue-cli-service build --mode production  --dest files --target lib --name priseRdv 'src/prod.js'"
+		"lint": "vue-cli-service lint"
 	},
 	"dependencies": {
 		"@vue/cli-plugin-babel": "^5.0.8",

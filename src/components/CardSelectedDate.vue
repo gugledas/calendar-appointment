@@ -8,7 +8,7 @@
 <script>
 import { mapState } from "vuex";
 export default {
-	name: "DateHourColumn",
+	name: "CardSelectedDate",
 	props: {},
 
 	data() {

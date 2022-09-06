@@ -9,12 +9,13 @@ const state = {
 	creneaux_datas: [],
 	rdv_datas: {
 		title: "",
-		prix: "A partir de 30€",
-		body: "champoin mélangeur et de tout ce qui viendra",
-		duree: "1h30min",
+		prix: "",
+		duree: "",
 	},
-
+	connected: false,
+	alreadyConnected: false,
 	urlCreneaux: "/booking-manager/api/",
+	saveUrl: "/booking-manager/save/rdv/",
 	creneauIsLoading: false,
 	currentSelectedDate: {
 		text: "En attente",
@@ -36,15 +37,14 @@ export default new Vuex.Store({
 			if (state.currentSelectedDate.value !== "") return true;
 			return false;
 		},
-		urlPath(state) {
-			let url = state.urlCreneaux;
+		urlPath() {
 			let endpoint = window.location.pathname
 				.split("/")
 				.filter((el) => el.length)
 				.splice(-2)
 				.join("/");
-			if (endpoint.length > 2) return url + endpoint;
-			return url;
+			if (endpoint.length > 2) return endpoint;
+			return "";
 		},
 	},
 	mutations: {
@@ -60,18 +60,27 @@ export default new Vuex.Store({
 		SET_RDV_DATAS(state, datas) {
 			state.rdv_datas = datas;
 		},
+		SET_CONNECTED(state, datas) {
+			state.connected = datas;
+		},
+		SET_ALREDY_CONNECTED(state, datas) {
+			state.alreadyConnected = datas;
+		},
 	},
 	actions: {
 		/**   Récupère les données du créneaux en BD
 		 * @param {string} url
 		 */
 		async getCreneauxDatas(context) {
+			let url = context.state.urlCreneaux;
 			context.commit("SET_LOADING", true);
-			console.log("url", context.getters.urlPath);
-			let datas = await config.get(context.getters.urlPath);
+			//console.log("url", context.getters.urlPath);
+			let datas = await config.get(url + context.getters.urlPath);
 			console.log("url", datas);
 			context.commit("GET_CRENEAUX_DATAS", datas.data.data_creneaux);
-			context.commit("SET_LOADING", false);
+			setTimeout(() => {
+				context.commit("SET_LOADING", false);
+			}, 2000);
 			/* set rdvDatas */
 			if (datas && datas.data && datas.data.data_to_rdv) {
 				let bdDatas = datas.data.data_to_rdv;
@@ -79,8 +88,7 @@ export default new Vuex.Store({
 				dts.prix = bdDatas.field_prix[0].value;
 				dts.title = bdDatas.title[0].value;
 				dts.duree = bdDatas.field_duree[0].value;
-				dts.body = bdDatas.body[0].value;
-				console.log("dts", dts);
+				//console.log("dts", dts);
 				context.commit("SET_RDV_DATAS", dts);
 			}
 		},
@@ -92,6 +100,23 @@ export default new Vuex.Store({
 		 */
 		setSelectedCreneau(context, datas) {
 			context.commit("SET_SELECTED_CRENEAUX", datas);
+		},
+		setConnected(context, datas, already) {
+			context.commit("SET_CONNECTED", datas);
+			if (already) {
+				context.commit("SET_ALREDY_CONNECTED", already);
+			}
+		},
+		saveDatasCreneauSelected(context, datas) {
+			let url = context.state.saveUrl;
+			config
+				.get(url + context.getters.urlPath, datas)
+				.then((res) => {
+					console.log("reponse save", res);
+				})
+				.catch((err) => {
+					console.error("reponse save", err);
+				});
 		},
 	},
 	modules: {},

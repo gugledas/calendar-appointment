@@ -2,7 +2,7 @@
 	<div>
 		<div class="options-content">
 			<div class="card-options">
-				<div class="co-title">
+				<div class="co-title" v-if="$store.state.rdv_datas.title.length">
 					{{ $store.state.rdv_datas.title }} -
 					{{ $store.state.rdv_datas.duree }} - {{ $store.state.rdv_datas.prix }}
 				</div>
@@ -13,7 +13,7 @@
 
 <script>
 export default {
-	name: "DateHourColumn",
+	name: "ServiceChoose",
 	props: {},
 
 	data() {

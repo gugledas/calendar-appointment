@@ -61,7 +61,7 @@ import FormCard from "./FormCard.vue";
 
 export default {
 	components: { FormCard },
-	name: "DateHourColumn",
+	name: "FormLogin",
 	props: {},
 
 	data() {
@@ -78,8 +78,6 @@ export default {
 			} else {
 				this.loginOpen = isJustShown;
 			}
-			console.log("collapseId:", collapseId);
-			console.log("isJustShown:", isJustShown);
 		});
 	},
 	computed: {

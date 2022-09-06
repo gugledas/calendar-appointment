@@ -92,6 +92,7 @@
 				model_register_form="generate_password"
 			></loginRegister>
 		</div>
+
 		<div
 			v-if="$store.state.connected && !$store.state.alreadyConnected"
 			class="container"
@@ -103,7 +104,12 @@
 				</div>
 			</div>
 		</div>
-		<div class="container" v-show="$store.state.connected">
+		<div
+			class="container"
+			v-show="
+				$store.state.connected && !$store.state.currentSelectedDate.editing
+			"
+		>
 			<div class="date-hours-title">Final</div>
 			<recapitulation-options></recapitulation-options>
 		</div>
@@ -150,14 +156,17 @@ export default {
 	mounted() {
 		this.check_if_user_connected();
 		users.getCurrentUser().then((user) => {
-			console.log("user login--", user);
+			//console.log("user login--", user);
 			if (user) {
-				this.$store.dispatch("setConnected", true, true);
+				this.$store.dispatch("setConnected", {
+					connected: true,
+					already: true,
+				});
 			}
 		});
 		let inter = setInterval(() => {
 			if (this.daysCreneaux.length) {
-				console.log("aattat", inter);
+				//console.log("aattat", inter);
 				this.editSwiper();
 				clearInterval(inter);
 			}
@@ -189,7 +198,10 @@ export default {
 					users.getCurrentUser().then((user) => {
 						console.log("user login--", user);
 						if (user) {
-							this.$store.dispatch("setConnected", true);
+							this.$store.dispatch("setConnected", {
+								connected: true,
+								already: false,
+							});
 						}
 					});
 				},

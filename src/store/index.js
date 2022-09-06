@@ -43,7 +43,7 @@ export default new Vuex.Store({
 		},
 	},
 	actions: {
-		/**   récupère les données du créneaux en BD
+		/**   Récupère les données du créneaux en BD
 		 * @param {string} url
 		 */
 		async getCreneauxDatas(context) {

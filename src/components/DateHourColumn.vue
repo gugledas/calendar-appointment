@@ -58,14 +58,14 @@ export default {
 			let month = day.format("MMMM");
 			let dayNumber = day.format("D");
 			let year = day.format("YYYY");
-			console.log("value", creneauTime.value, month, weekDays);
+			//console.log("value", creneauTime.value, month, weekDays);
 			let datas = {
 				text: `${weekDays} ${dayNumber} ${month} ${year} à ${creneauTime.value}`,
 				value: creneauTime.value,
 				editing: false,
 			};
 			this.$store.dispatch("setSelectedCreneau", datas);
-			window.scrollTo(0, document.body.scrollHeight);
+			window.scrollTo(0, 400);
 		},
 	},
 };

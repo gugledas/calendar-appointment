@@ -1,8 +1,9 @@
 <template>
 	<div class="card-appoint">
 		<div class="container">
-			<div class="date-hours-title">1. Choix de la date & heure</div>
-			<div v-if="!$store.state.currentSelectedDate.editing">
+			<service-choose></service-choose>
+			<div class="date-hours-title">2. Choix de la date & heure</div>
+			<div v-show="!$store.state.currentSelectedDate.editing">
 				<card-selected-date></card-selected-date>
 			</div>
 			<div v-show="$store.state.currentSelectedDate.editing">
@@ -82,12 +83,16 @@
 				model_register_form="generate_password"
 			></loginRegister>
 		</div>
+		<div class="container">
+			<div class="date-hours-title">Final</div>
+		</div>
 	</div>
 </template>
 
 <script>
 import { mapState } from "vuex";
 import { mapGetters } from "vuex";
+/* register */
 import { loginRegister } from "drupal-vuejs";
 import users from "../config/users";
 /* moment js */
@@ -103,6 +108,7 @@ import "swiper/css";
 import DateHourColumn from "./DateHourColumn.vue";
 import CardSelectedDate from "./CardSelectedDate.vue";
 import FormLogin from "./FormLogin.vue";
+import ServiceChoose from "./ServiceChoose.vue";
 
 export default {
 	components: {
@@ -110,11 +116,10 @@ export default {
 		CardSelectedDate,
 		FormLogin,
 		loginRegister,
+		ServiceChoose,
 	},
 	name: "CardAppointment",
-	props: {
-		msg: String,
-	},
+	props: {},
 
 	data() {
 		return {};
@@ -136,13 +141,17 @@ export default {
 			spaceBetween: 30,
 			loop: false,
 			breakpoints: {
-				577: {
+				377: {
 					slidesPerView: 2,
 					slidesPerGroup: 2,
 				},
-				769: {
+				569: {
 					slidesPerView: 3,
 					slidesPerGroup: 3,
+				},
+				769: {
+					slidesPerView: 4,
+					slidesPerGroup: 4,
 				},
 				993: {
 					slidesPerView: 5,
@@ -174,13 +183,17 @@ export default {
 			loop: false,
 			spaceBetween: 30,
 			breakpoints: {
-				577: {
+				377: {
 					slidesPerView: 2,
 					slidesPerGroup: 2,
 				},
-				769: {
+				569: {
 					slidesPerView: 3,
 					slidesPerGroup: 3,
+				},
+				769: {
+					slidesPerView: 4,
+					slidesPerGroup: 4,
 				},
 				993: {
 					slidesPerView: 5,
@@ -192,12 +205,16 @@ export default {
 				},
 			},
 		});
+		users.getCurrentUser().then((res) => {
+			console.log("user", res);
+		});
 	},
 	computed: {
 		...mapState({ isLoading: "creneauIsLoading" }),
 		...mapGetters(["daysCreneaux"]),
 	},
 	methods: {
+		emit_even() {},
 		/** *
 		 *  @param {object} days represente les information du jours
 		 *  @param {string} object.value la date du jour au format "Fri 2 Sep"
@@ -225,6 +242,10 @@ export default {
 </script>
 
 <style lang="scss">
+html,
+body {
+	min-height: initial;
+}
 .link-sc {
 	cursor: pointer;
 	display: flex;
@@ -378,12 +399,6 @@ swiper-rows {
 			rgb(0 0 0 / 4%) 0px 0px 10px 0px;
 		margin-bottom: 20px;
 		padding-bottom: 40px;
-		.login-page .content-center {
-			width: 300px;
-		}
-		.politik-secur {
-			color: inherit !important;
-		}
 	}
 	a {
 		cursor: pointer;

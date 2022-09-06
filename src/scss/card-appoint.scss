@@ -1,0 +1,46 @@
+.date-hours-content {
+	margin-top: 5px;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	box-shadow: rgb(60 66 87 / 4%) 0px 0px 5px 0px,
+		rgb(0 0 0 / 4%) 0px 0px 10px 0px;
+	border-radius: 4px;
+}
+.date-header {
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	display: flex;
+	height: 54px;
+	padding: 10px 5%;
+	position: relative;
+	border-bottom: 1px solid rgb(229, 229, 229);
+	-webkit-box-pack: justify;
+	justify-content: space-between;
+}
+.dh-date {
+	width: 15%;
+	text-align: center;
+	display: flex;
+	color: rgb(151, 151, 151);
+	font-weight: bold;
+	-webkit-box-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	justify-content: center;
+	&--current {
+		color: rgb(13, 13, 13);
+	}
+}
+.date-row {
+	height: calc(100% - 59px);
+	padding: 0px 5% 26px;
+	display: flex;
+	border-radius: 4px;
+	-webkit-box-pack: justify;
+	justify-content: space-between;
+	.dr-colum {
+		width: 15%;
+		text-align: center;
+	}
+}

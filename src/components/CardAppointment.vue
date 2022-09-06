@@ -205,6 +205,7 @@ export default {
 				},
 			},
 		});
+		users.TestDomain;
 		users.getCurrentUser().then((res) => {
 			console.log("user", res);
 		});

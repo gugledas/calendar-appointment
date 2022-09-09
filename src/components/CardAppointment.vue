@@ -10,9 +10,18 @@
 			</div>
 
 			<div>
+				<div v-show="!isLoading">
+					<b-alert v-model="$store.state.statusCreneau" variant="primary">
+						Aucun créneaux disponible
+					</b-alert>
+				</div>
 				<div
 					class="date-hours-content"
-					v-show="$store.state.currentSelectedDate.editing && !isLoading"
+					v-show="
+						$store.state.currentSelectedDate.editing &&
+						!isLoading &&
+						!$store.state.statusCreneau
+					"
 				>
 					<div class="content-header">
 						<div class="date-header swiper-creneau">
@@ -113,6 +122,10 @@
 			<div class="date-hours-title">Final</div>
 			<recapitulation-options></recapitulation-options>
 		</div>
+		<!-- pop up modal -->
+		<div>
+			<pop-up-modal></pop-up-modal>
+		</div>
 	</div>
 </template>
 
@@ -137,6 +150,7 @@ import CardSelectedDate from "./CardSelectedDate.vue";
 import FormLogin from "./FormLogin.vue";
 import ServiceChoose from "./ServiceChoose.vue";
 import RecapitulationOptions from "./RecapitulationOptions.vue";
+import PopUpModal from "./PopUpModal.vue";
 
 export default {
 	components: {
@@ -146,6 +160,7 @@ export default {
 		loginRegister,
 		ServiceChoose,
 		RecapitulationOptions,
+		PopUpModal,
 	},
 	name: "CardAppointment",
 	props: {},

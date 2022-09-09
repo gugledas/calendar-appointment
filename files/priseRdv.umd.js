@@ -66194,7 +66194,7 @@ const state = {
         creneaux: context.state.currentSelectedDate.value,
         date: context.state.currentSelectedDate.date
       };
-      context.commit("SET_STATUS_CRENEAUX", true);
+      context.commit("SET_SAVING_LOADING", true);
       console.log("datasave", data, url);
       rootConfig.post(context.state.saveUrl + url, data).then(res => {
         console.log("reponse save", res);
@@ -66203,7 +66203,7 @@ const state = {
           message: "Réservation éffectuer avec success",
           variant: "success"
         });
-        context.commit("SET_STATUS_CRENEAUX", false);
+        context.commit("SET_SAVING_LOADING", false);
         setTimeout(() => {
           window.location = window.location.origin;
         }, 6000);
@@ -66214,7 +66214,7 @@ const state = {
           message: "Une erreur s'est produite",
           variant: "danger"
         });
-        context.commit("SET_STATUS_CRENEAUX", false);
+        context.commit("SET_SAVING_LOADING", false);
       });
     },
 

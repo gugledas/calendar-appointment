@@ -18,8 +18,16 @@ const state = {
 	urlCreneaux: "/booking-manager/api/",
 	saveUrl: "/booking-manager/save/rdv/",
 	creneauIsLoading: false,
+	popUpInfo: {
+		show: false,
+		message: "",
+		variant: "",
+	},
+	/* indique si des creneau sont disponibles ou pas */
+	statusCreneau: false,
+	messagePopUP: "Réservation éffectuer avec success",
 	currentSelectedDate: {
-		text: "En attente",
+		text: "...",
 		value: "",
 		editing: true,
 		date: "",
@@ -65,8 +73,14 @@ export default new Vuex.Store({
 		SET_CONNECTED(state, datas) {
 			state.connected = datas;
 		},
+		SET_STATUS_CRENEAUX(state, datas) {
+			state.statusCreneau = datas;
+		},
 		SET_ALREDY_CONNECTED(state, datas) {
 			state.alreadyConnected = datas;
+		},
+		SET_POP_UP_INFO(state, datas) {
+			state.popUpInfo = datas;
 		},
 	},
 	actions: {
@@ -77,12 +91,20 @@ export default new Vuex.Store({
 			let url = context.state.urlCreneaux;
 			context.commit("SET_LOADING", true);
 			//console.log("url", context.getters.urlPath);
-			let datas = await config.get(url + context.getters.urlPath);
+			let datas = await config
+				.get(url + context.getters.urlPath)
+				.catch((er) => {
+					console.log("cattt", er);
+					context.commit("SET_STATUS_CRENEAUX", true);
+					context.commit("SET_LOADING", false);
+				});
 			console.log("url", datas);
-			context.commit("GET_CRENEAUX_DATAS", datas.data.data_creneaux);
-			setTimeout(() => {
-				context.commit("SET_LOADING", false);
-			}, 2000);
+			if (datas && datas.data && datas.data.data_creneaux) {
+				context.commit("GET_CRENEAUX_DATAS", datas.data.data_creneaux);
+				setTimeout(() => {
+					context.commit("SET_LOADING", false);
+				}, 200);
+			}
 			/* set rdvDatas */
 			if (datas && datas.data && datas.data.data_to_rdv) {
 				let bdDatas = datas.data.data_to_rdv;
@@ -119,16 +141,34 @@ export default new Vuex.Store({
 				creneaux: context.state.currentSelectedDate.value,
 				date: context.state.currentSelectedDate.date,
 			};
-			console.log("datasave", data);
+
+			console.log("datasave", data, url);
 			config
-				.get(context.state.urlCreneaux + url, data)
+				.post(context.state.saveUrl, data)
 				.then((res) => {
 					console.log("reponse save", res);
-					alert("Reservation ok");
+					context.commit("SET_POP_UP_INFO", {
+						show: true,
+						message: "Réservation éffectuer avec success",
+						variant: "success",
+					});
+					setTimeout(() => {
+						window.location = window.location.origin;
+					}, 6000);
 				})
 				.catch((err) => {
-					console.error("reponse save", err);
+					console.error("save error", err);
+					context.commit("SET_POP_UP_INFO", {
+						show: true,
+						message: "Une erreur s'est produite",
+						variant: "danger",
+					});
 				});
+		},
+		redirectAfterSave(context) {
+			if (context.state.popUpInfo.variant != "danger") {
+				window.location = window.location.origin;
+			}
 		},
 	},
 	modules: {},

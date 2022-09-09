@@ -1,0 +1,2 @@
+"use strict";(("undefined"!==typeof self?self:this)["webpackChunkpriseRdv"]=("undefined"!==typeof self?self:this)["webpackChunkpriseRdv"]||[]).push([[443],{63555:function(e,n,s){s.r(n),s.d(n,{default:function(){return r}});var t=function(){var e=this;e._self._c;return e._m(0)},u=[function(){var e=this,n=e._self._c;return n("div",{staticClass:"about"},[n("h1",[e._v("This is an about page")])])}],i=s(1001),f={},l=(0,i.Z)(f,t,u,!1,null,null,null),r=l.exports}}]);
+//# sourceMappingURL=priseRdv.umd.min.about.js.map

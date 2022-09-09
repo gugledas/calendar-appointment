@@ -113,12 +113,10 @@
 				</div>
 			</div>
 		</div>
-		<div
-			class="container"
-			v-show="
+		<div class="container">
+			<!-- v-show="
 				$store.state.connected && !$store.state.currentSelectedDate.editing
-			"
-		>
+			" -->
 			<div class="date-hours-title">Final</div>
 			<recapitulation-options></recapitulation-options>
 		</div>

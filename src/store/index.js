@@ -23,6 +23,7 @@ const state = {
 		message: "",
 		variant: "",
 	},
+	saveLoading: false,
 	/* indique si des creneau sont disponibles ou pas */
 	statusCreneau: false,
 	messagePopUP: "Réservation éffectuer avec success",
@@ -73,8 +74,11 @@ export default new Vuex.Store({
 		SET_CONNECTED(state, datas) {
 			state.connected = datas;
 		},
+		SET_SAVING_LOADING(state, datas) {
+			state.connected = datas;
+		},
 		SET_STATUS_CRENEAUX(state, datas) {
-			state.statusCreneau = datas;
+			state.saveLoading = datas;
 		},
 		SET_ALREDY_CONNECTED(state, datas) {
 			state.alreadyConnected = datas;
@@ -141,10 +145,11 @@ export default new Vuex.Store({
 				creneaux: context.state.currentSelectedDate.value,
 				date: context.state.currentSelectedDate.date,
 			};
+			context.commit("SET_STATUS_CRENEAUX", true);
 
 			console.log("datasave", data, url);
 			config
-				.post(context.state.saveUrl, data)
+				.post(context.state.saveUrl + url, data)
 				.then((res) => {
 					console.log("reponse save", res);
 					context.commit("SET_POP_UP_INFO", {
@@ -152,6 +157,7 @@ export default new Vuex.Store({
 						message: "Réservation éffectuer avec success",
 						variant: "success",
 					});
+					context.commit("SET_STATUS_CRENEAUX", false);
 					setTimeout(() => {
 						window.location = window.location.origin;
 					}, 6000);
@@ -163,6 +169,7 @@ export default new Vuex.Store({
 						message: "Une erreur s'est produite",
 						variant: "danger",
 					});
+					context.commit("SET_STATUS_CRENEAUX", false);
 				});
 		},
 		redirectAfterSave(context) {

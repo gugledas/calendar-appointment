@@ -11,8 +11,20 @@
 				Qui vous coûteras <strong>{{ $store.state.rdv_datas.prix }} </strong>.
 			</div>
 			<div>
-				<button block class="btn-regist" @click="saveDatas">
+				<button
+					block
+					class="btn-regist d-flex align-items-center"
+					@click="saveDatas"
+				>
 					Confirmer la réservation
+					<div v-if="$store.state.saveLoading" class="ml-3">
+						<b-spinner
+							style="width: 1.2rem; height: 1.2rem"
+							variant="primary"
+							type="grow"
+							label="Spinning"
+						></b-spinner>
+					</div>
 				</button>
 			</div>
 		</div>

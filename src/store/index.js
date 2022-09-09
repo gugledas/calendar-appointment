@@ -75,10 +75,10 @@ export default new Vuex.Store({
 			state.connected = datas;
 		},
 		SET_SAVING_LOADING(state, datas) {
-			state.connected = datas;
+			state.saveLoading = datas;
 		},
 		SET_STATUS_CRENEAUX(state, datas) {
-			state.saveLoading = datas;
+			state.statusCreneau = datas;
 		},
 		SET_ALREDY_CONNECTED(state, datas) {
 			state.alreadyConnected = datas;

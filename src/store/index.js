@@ -7,6 +7,7 @@ Vue.use(Vuex);
 const state = {
 	/* représente les données d'un créneaux spécifique en BD */
 	creneaux_datas: [],
+	/* information de la prestation sélectionner */
 	rdv_datas: {
 		title: "",
 		prix: "",
@@ -96,7 +97,7 @@ export default new Vuex.Store({
 			context.commit("SET_LOADING", true);
 			//console.log("url", context.getters.urlPath);
 			let datas = await config
-				.get(url + context.getters.urlPath)
+				.get(url + context.getters.urlPath, { timeout: 10000 })
 				.catch((er) => {
 					console.log("cattt", er);
 					context.commit("SET_STATUS_CRENEAUX", true);
@@ -149,7 +150,7 @@ export default new Vuex.Store({
 
 			console.log("datasave", data, url);
 			config
-				.post(context.state.saveUrl + url, data)
+				.post(context.state.saveUrl + url + "1", data)
 				.then((res) => {
 					console.log("reponse save", res);
 					context.commit("SET_POP_UP_INFO", {

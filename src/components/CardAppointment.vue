@@ -4,8 +4,19 @@
 			<div>
 				<service-choose></service-choose>
 			</div>
+
+			<div class="d-flex align-items-baseline justify-content-between">
+				<div class="date-hours-title">1. Selectionner l'utilisateur</div>
+				<b-form-group class="mx-5" size="lg">
+					<b-form-select
+						v-model="selected.equipe"
+						:options="executants"
+						class="form-control"
+					></b-form-select>
+				</b-form-group>
+			</div>
 			<div class="date-hours-title">2. Choix de la date & heure</div>
-			<div v-show="!$store.state.currentSelectedDate.editing">
+			<div v-show="!$store.state.selected.creneau.editing">
 				<card-selected-date></card-selected-date>
 			</div>
 
@@ -18,7 +29,7 @@
 				<div
 					class="date-hours-content"
 					v-show="
-						$store.state.currentSelectedDate.editing &&
+						$store.state.selected.creneau.editing &&
 						!isLoading &&
 						!$store.state.statusCreneau
 					"
@@ -115,9 +126,7 @@
 		</div>
 		<div
 			class="container"
-			v-show="
-				$store.state.connected && !$store.state.currentSelectedDate.editing
-			"
+			v-show="$store.state.connected && !$store.state.selected.creneau.editing"
 		>
 			<div class="date-hours-title">Final</div>
 			<recapitulation-options></recapitulation-options>
@@ -130,8 +139,7 @@
 </template>
 
 <script>
-import { mapState } from "vuex";
-import { mapGetters } from "vuex";
+import { mapState, mapGetters } from "vuex";
 /* register */
 import { loginRegister } from "drupal-vuejs";
 import users from "../config/users";
@@ -166,7 +174,9 @@ export default {
 	props: {},
 
 	data() {
-		return {};
+		return {
+			equipe: "",
+		};
 	},
 	mounted() {
 		this.check_if_user_connected();
@@ -186,11 +196,10 @@ export default {
 				clearInterval(inter);
 			}
 		}, 100);
-		//this.editSwiper();
 	},
 	computed: {
-		...mapState({ isLoading: "creneauIsLoading" }),
-		...mapGetters(["daysCreneaux"]),
+		...mapState({ isLoading: "creneauIsLoading", selected: "selected" }),
+		...mapGetters(["daysCreneaux", "executants"]),
 	},
 	methods: {
 		/** *

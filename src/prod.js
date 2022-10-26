@@ -12,4 +12,4 @@ new Vue({
 	router,
 	store,
 	render: (h) => h(App),
-}).$mount("#app-prise-rdv");
+}).$mount("#app-prise-rdv-v1");

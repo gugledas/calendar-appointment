@@ -4,8 +4,7 @@
 			<div class="desc-content">
 				Vous êtes sur le point de réserver la prestation :
 				<strong>{{ $store.state.rdv_datas.title }} </strong> <br />
-				Pour le <strong>{{ $store.state.currentSelectedDate.text }} </strong
-				><br />
+				Pour le <strong>{{ $store.state.selected.creneau.text }} </strong><br />
 				Pendant une durrée de
 				<strong>{{ $store.state.rdv_datas.duree }} </strong> <br />
 				Qui vous coûteras <strong>{{ $store.state.rdv_datas.prix }} </strong>.

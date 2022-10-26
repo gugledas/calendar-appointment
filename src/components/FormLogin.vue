@@ -56,7 +56,6 @@
 </template>
 
 <script>
-import { mapState } from "vuex";
 import FormCard from "./FormCard.vue";
 
 export default {
@@ -81,9 +80,6 @@ export default {
 		});
 	},
 	computed: {
-		...mapState({
-			donnee: "currentSelectedDate",
-		}),
 		btnIsActive() {
 			return "";
 		},

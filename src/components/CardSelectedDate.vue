@@ -14,10 +14,24 @@ export default {
 	data() {
 		return {};
 	},
-	mounted() {},
+	mounted() {
+		console.log("donnee : ", this.donnee);
+	},
 	computed: {
+		donnee() {
+			if (this.selectedVal && this.selectedVal.creneau) {
+				return this.selectedVal.creneau;
+			} else {
+				return {
+					text: "...",
+					value: "",
+					editing: true,
+					date: "",
+				};
+			}
+		},
 		...mapState({
-			donnee: "currentSelectedDate",
+			selectedVal: "selected",
 		}),
 	},
 	methods: {

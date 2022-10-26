@@ -16,8 +16,8 @@ const state = {
 	},
 	connected: false,
 	alreadyConnected: false,
-	urlCreneaux: "/booking-manager/api/",
-	saveUrl: "/booking-manager/save/rdv/",
+	urlCreneaux: "/prise-rendez-vous/souscription/",
+	saveUrl: "/prise-rendez-vous/save/rdv/",
 	creneauIsLoading: false,
 	popUpInfo: {
 		show: false,
@@ -28,11 +28,14 @@ const state = {
 	/* indique si des creneau sont disponibles ou pas */
 	statusCreneau: false,
 	messagePopUP: "Réservation éffectuer avec success",
-	currentSelectedDate: {
-		text: "...",
-		value: "",
-		editing: true,
-		date: "",
+	selected: {
+		equipe: false,
+		creneau: {
+			text: "...",
+			value: "",
+			editing: true,
+			date: "",
+		},
 	},
 };
 
@@ -46,7 +49,7 @@ export default new Vuex.Store({
 			return [];
 		},
 		canRegister(state) {
-			if (state.currentSelectedDate.value !== "") return true;
+			if (state.selected.creneau.value !== "") return true;
 			return false;
 		},
 		urlPath() {
@@ -58,6 +61,15 @@ export default new Vuex.Store({
 			if (endpoint.length > 2) return endpoint;
 			return "";
 		},
+		executants(state) {
+			var equipes = [];
+			if (state.creneaux_datas.equipes) {
+				state.creneaux_datas.equipes.forEach((item) => {
+					equipes.push({ value: item.id, text: item.title });
+				});
+				return equipes;
+			} else return equipes;
+		},
 	},
 	mutations: {
 		GET_CRENEAUX_DATAS(state, datas) {
@@ -67,7 +79,10 @@ export default new Vuex.Store({
 			state.creneauIsLoading = datas;
 		},
 		SET_SELECTED_CRENEAUX(state, datas) {
-			state.currentSelectedDate = datas;
+			state.selected.creneau = datas;
+		},
+		SET_SELECTED_EQUIPE(state, datas) {
+			state.selected.equipe = datas;
 		},
 		SET_RDV_DATAS(state, datas) {
 			state.rdv_datas = datas;
@@ -106,6 +121,14 @@ export default new Vuex.Store({
 			console.log("url", datas);
 			if (datas && datas.data && datas.data.data_creneaux) {
 				context.commit("GET_CRENEAUX_DATAS", datas.data.data_creneaux);
+				// on selectionne la premiere valeur dans equipe.
+				if (datas.data.data_creneaux && datas.data.data_creneaux.equipes) {
+					context.commit(
+						"SET_SELECTED_EQUIPE",
+						datas.data.data_creneaux.equipes[0].id
+					);
+				}
+
 				setTimeout(() => {
 					context.commit("SET_LOADING", false);
 				}, 200);
@@ -122,7 +145,7 @@ export default new Vuex.Store({
 				context.commit("SET_RDV_DATAS", dts);
 			}
 		},
-		/**   Mets a jour les infos de l'étape du choix du créneaux {{state.currentSelectedDate}}
+		/**   Mets a jour les infos de l'étape du choix du créneaux
 		 * @param {Object} datas
 		 * @param {string} datas.text Répresente le texte de la date sélectionné
 		 * @param {string} datas.value l'heure du créneau choisis
@@ -130,6 +153,9 @@ export default new Vuex.Store({
 		 */
 		setSelectedCreneau(context, datas) {
 			context.commit("SET_SELECTED_CRENEAUX", datas);
+		},
+		setSelectedEquipe(context, datas) {
+			context.commit("SET_SELECTED_EQUIPE", datas);
 		},
 		setConnected(context, datas) {
 			context.commit("SET_CONNECTED", datas.connected);
@@ -143,14 +169,13 @@ export default new Vuex.Store({
 			let data = {
 				entity_type_id: url.split("/")[0],
 				entity_id: url.split("/")[1],
-				creneaux: context.state.currentSelectedDate.value,
-				date: context.state.currentSelectedDate.date,
+				...context.state.selected,
 			};
 			context.commit("SET_SAVING_LOADING", true);
+			console.log(" Datasave : ", data, url);
 
-			console.log("datasave", data, url);
 			config
-				.post(context.state.saveUrl + url + "1", data)
+				.post(context.state.saveUrl + url, data)
 				.then((res) => {
 					console.log("reponse save", res);
 					context.commit("SET_POP_UP_INFO", {

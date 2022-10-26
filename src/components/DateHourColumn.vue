@@ -16,6 +16,7 @@
 
 <script>
 import moment from "moment";
+import { mapState } from "vuex";
 export default {
 	name: "DateHourColumn",
 	props: {
@@ -33,8 +34,22 @@ export default {
 	},
 	mounted() {},
 	computed: {
+		...mapState({ selected: "selected" }),
 		trueCreneaux() {
-			return this.creneaux.creneau.filter((creneau) => creneau.status);
+			return this.creneaux.creneau.filter((creneau) => {
+				// On verifie si Le creneau de l'equipe est disponible.
+				try {
+					if (
+						this.selected.equipe &&
+						creneau.equipes &&
+						creneau.equipes.includes(this.selected.equipe)
+					)
+						return creneau.status;
+					return false;
+				} catch (error) {
+					console.log(" Error", error, creneau);
+				}
+			});
 		},
 	},
 	methods: {

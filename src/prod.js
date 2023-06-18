@@ -11,5 +11,8 @@ Vue.config.productionTip = false;
 new Vue({
 	router,
 	store,
+	props: {
+		urlCreneaux: { type: String, default: "/prise-rendez-vous/souscription/" },
+	},
 	render: (h) => h(App),
 }).$mount("#app-prise-rdv-v1");

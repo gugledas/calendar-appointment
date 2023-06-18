@@ -6,7 +6,7 @@
 			</div>
 
 			<div class="d-flex align-items-baseline justify-content-between">
-				<div class="date-hours-title">1. Selectionner l'utilisateur</div>
+				<div class="date-hours-title">1. Avec qui ?</div>
 				<b-form-group class="mx-5" size="lg">
 					<b-form-select
 						v-model="selected.equipe"

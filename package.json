@@ -7,7 +7,7 @@
 		"serve": "vue-cli-service serve",
 		"build": "vue-cli-service build",
 		"lint": "vue-cli-service lint",
-		"Dev": "vue-cli-service build --mode development  --dest files --target lib --name priseRdv 'src/prod.js'",
+		"Dev": "vue-cli-service build --mode development --watch  --dest files --target lib --name priseRdv 'src/prod.js'",
 		"Prod": "vue-cli-service build --mode production  --dest files --target lib --name priseRdv 'src/prod.js'"
 	},
 	"dependencies": {

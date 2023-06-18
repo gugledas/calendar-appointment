@@ -110,14 +110,13 @@ export default new Vuex.Store({
 		async getCreneauxDatas(context) {
 			let url = context.state.urlCreneaux;
 			context.commit("SET_LOADING", true);
-			//console.log("url", context.getters.urlPath);
-			let datas = await config
-				.get(url + context.getters.urlPath, { timeout: 10000 })
-				.catch((er) => {
-					console.log("cattt", er);
-					context.commit("SET_STATUS_CRENEAUX", true);
-					context.commit("SET_LOADING", false);
-				});
+			console.log("url getCreneauxDatas : ", context.getters.urlPath);
+			if (context.getters.urlPath) url += context.getters.urlPath;
+			let datas = await config.get(url, { timeout: 10000 }).catch((er) => {
+				console.log("cattt", er);
+				context.commit("SET_STATUS_CRENEAUX", true);
+				context.commit("SET_LOADING", false);
+			});
 			console.log("url", datas);
 			if (datas && datas.data && datas.data.data_creneaux) {
 				context.commit("GET_CRENEAUX_DATAS", datas.data.data_creneaux);

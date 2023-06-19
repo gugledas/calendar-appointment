@@ -17,6 +17,10 @@ const state = {
 	connected: false,
 	alreadyConnected: false,
 	urlCreneaux: "/prise-rendez-vous/souscription/",
+	/**
+	 * Permet de consytruire l'url de l'action en function de l'url de la page.
+	 */
+	dynamicUrl: true,
 	saveUrl: "/prise-rendez-vous/save/rdv/",
 	creneauIsLoading: false,
 	popUpInfo: {
@@ -110,8 +114,9 @@ export default new Vuex.Store({
 		async getCreneauxDatas(context) {
 			let url = context.state.urlCreneaux;
 			context.commit("SET_LOADING", true);
-			console.log("url getCreneauxDatas : ", context.getters.urlPath);
-			if (context.getters.urlPath) url += context.getters.urlPath;
+			//
+			if (context.state.dynamicUrl && context.getters.urlPath)
+				url += context.getters.urlPath;
 			let datas = await config.get(url, { timeout: 10000 }).catch((er) => {
 				console.log("cattt", er);
 				context.commit("SET_STATUS_CRENEAUX", true);
@@ -121,19 +126,24 @@ export default new Vuex.Store({
 			if (datas && datas.data && datas.data.data_creneaux) {
 				context.commit("GET_CRENEAUX_DATAS", datas.data.data_creneaux);
 				// on selectionne la premiere valeur dans equipe.
-				if (datas.data.data_creneaux && datas.data.data_creneaux.equipes) {
+				if (
+					datas.data.data_creneaux &&
+					datas.data.data_creneaux.equipes &&
+					datas.data.data_creneaux.equipes[0]
+				) {
 					context.commit(
 						"SET_SELECTED_EQUIPE",
 						datas.data.data_creneaux.equipes[0].id
 					);
 				}
-
-				setTimeout(() => {
-					context.commit("SET_LOADING", false);
-				}, 200);
 			}
 			/* set rdvDatas */
-			if (datas && datas.data && datas.data.data_to_rdv) {
+			if (
+				datas &&
+				datas.data &&
+				datas.data.data_to_rdv &&
+				datas.data.data_to_rdv.id
+			) {
 				let bdDatas = datas.data.data_to_rdv;
 				let dts = {};
 				dts.prix = bdDatas.field_prix[0].value;
@@ -143,6 +153,9 @@ export default new Vuex.Store({
 				//console.log("dts", dts);
 				context.commit("SET_RDV_DATAS", dts);
 			}
+			setTimeout(() => {
+				context.commit("SET_LOADING", false);
+			}, 200);
 		},
 		/**   Mets a jour les infos de l'étape du choix du créneaux
 		 * @param {Object} datas

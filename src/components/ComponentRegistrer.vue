@@ -11,7 +11,7 @@
 <script>
 import { loginRegister } from "drupal-vuejs";
 import { mapState } from "vuex";
-import users from "../../users.js";
+import users from "../config/users";
 export default {
 	name: "page-register",
 	components: {
@@ -28,7 +28,7 @@ export default {
 			document.addEventListener(
 				"login_rx_vuejs__user_is_login",
 				() => {
-					console.log("user login");
+					console.log("user login : ", users);
 					users.getCurrentUser().then((user) => {
 						console.log("user login--", user);
 					});

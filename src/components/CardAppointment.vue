@@ -5,8 +5,11 @@
 				<service-choose></service-choose>
 			</div>
 
-			<div class="d-flex align-items-baseline justify-content-between">
-				<div class="date-hours-title">1. Avec qui ?</div>
+			<div
+				v-if="executants.length > 0"
+				class="d-flex align-items-baseline justify-content-between"
+			>
+				<div class="date-hours-title">Avec qui ?</div>
 				<b-form-group class="mx-5" size="lg">
 					<b-form-select
 						v-model="selected.equipe"
@@ -15,7 +18,7 @@
 					></b-form-select>
 				</b-form-group>
 			</div>
-			<div class="date-hours-title">2. Choix de la date & heure</div>
+			<div class="date-hours-title">Choix de la date & heure</div>
 			<div v-show="!$store.state.selected.creneau.editing">
 				<card-selected-date></card-selected-date>
 			</div>
@@ -78,6 +81,7 @@
 							</div>
 						</div>
 					</div>
+					<!-- Affichage des creneaux -->
 					<div class="date-row swiper-rows">
 						<div class="swiper-wrapper">
 							<div
@@ -218,7 +222,6 @@ export default {
 			document.addEventListener(
 				"login_rx_vuejs__user_is_login",
 				() => {
-					console.log("user login");
 					users.getCurrentUser().then((user) => {
 						console.log("user login--", user);
 						if (user) {

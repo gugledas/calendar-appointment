@@ -7,15 +7,3 @@
 		<router-view />
 	</div>
 </template>
-<script>
-export default {
-	mounted() {
-		this.getDatas();
-	},
-	methods: {
-		getDatas() {
-			this.$store.dispatch("getCreneauxDatas");
-		},
-	},
-};
-</script>

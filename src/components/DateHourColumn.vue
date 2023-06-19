@@ -34,20 +34,23 @@ export default {
 	},
 	mounted() {},
 	computed: {
-		...mapState({ selected: "selected" }),
+		...mapState({ selected: "selected", executants: "executants" }),
 		trueCreneaux() {
 			return this.creneaux.creneau.filter((creneau) => {
 				// On verifie si Le creneau de l'equipe est disponible.
 				try {
-					if (
-						this.selected.equipe &&
-						creneau.equipes &&
-						creneau.equipes.includes(this.selected.equipe)
-					)
-						return creneau.status;
-					return false;
+					// si on a pas definie d'equipe en amont(i.e au niveau de la configuration), on renvoit tous.
+					if (this.executants && this.executants.length > 0) {
+						if (
+							this.selected.equipe &&
+							creneau.equipes &&
+							creneau.equipes.includes(this.selected.equipe)
+						)
+							return creneau.status;
+						else return false;
+					} else return creneau.status;
 				} catch (error) {
-					console.log(" Error", error, creneau);
+					console.log(" trueCreneaux  Error ", error, creneau);
 				}
 			});
 		},
@@ -73,7 +76,6 @@ export default {
 			let month = day.format("MMMM");
 			let dayNumber = day.format("D");
 			let year = day.format("YYYY");
-			//let nextCreneau = this.$store.state.rdv_datas.duree;
 
 			let datas = {
 				text: `${weekDays} ${dayNumber} ${month} ${year} à ${creneauTime.value}`,

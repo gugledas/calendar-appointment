@@ -5,6 +5,11 @@ import config from "../rootConfig";
 Vue.use(Vuex);
 
 const state = {
+	//to login
+	form: {
+		name: [{ value: "" }],
+		mail: [{ value: "" }],
+	},
 	/* représente les données d'un créneaux spécifique en BD */
 	creneaux_datas: [],
 	/* information de la prestation sélectionner */
@@ -16,13 +21,29 @@ const state = {
 	},
 	connected: false,
 	alreadyConnected: false,
-	urlCreneaux: "/prise-rendez-vous/souscription/",
+	urlCreneaux: "/prise-rendez-vous/souscription",
 	/**
-	 * Permet de consytruire l'url de l'action en function de l'url de la page.
+	 * Permet de construire l'url de l'action en function de l'url de la page.
+	 * ( il faudra changer cela et transmetre directement les paramettres via les attributes )
 	 */
 	dynamicUrl: true,
-	saveUrl: "/prise-rendez-vous/save/rdv/",
+	saveUrl: "/prise-rendez-vous/save/rdv",
+	/**
+	 * Parametre permettant d'identifier l'entité parente.
+	 */
+	entity_id: null, //requis
+	entity_type: null, //requis
+	entity_type_id: null, //optionnel.
+	rdv_config_entity: null, //requis
+	//
+	/**
+	 * Definie si on effectue la MAJ.
+	 */
+	submit_rdv_entity_id: null,
+	//
+	show_popup_save: true,
 	creneauIsLoading: false,
+	action_after_save: "/",
 	popUpInfo: {
 		show: false,
 		message: "",
@@ -56,14 +77,17 @@ export default new Vuex.Store({
 			if (state.selected.creneau.value !== "") return true;
 			return false;
 		},
-		urlPath() {
-			let endpoint = window.location.pathname
-				.split("/")
-				.filter((el) => el.length)
-				.splice(-2)
-				.join("/");
-			if (endpoint.length > 2) return endpoint;
-			return "";
+		urlPath(state) {
+			// let endpoint = window.location.pathname
+			// 	.split("/")
+			// 	.filter((el) => el.length)
+			// 	.splice(-2)
+			// 	.join("/");
+			// if (endpoint.length > 2) return endpoint;
+			// return "";
+			if (state.entity_id && state.entity_type)
+				return "/" + state.entity_type + "/" + state.entity_id;
+			else return null;
 		},
 		executants(state) {
 			var equipes = [];
@@ -108,24 +132,27 @@ export default new Vuex.Store({
 		},
 	},
 	actions: {
-		/**   Récupère les données du créneaux en BD
+		/**
+		 * Récupère les données du créneaux en BD et la conf.
 		 * @param {string} url
 		 */
 		async getCreneauxDatas(context) {
 			let url = context.state.urlCreneaux;
 			context.commit("SET_LOADING", true);
 			//
-			if (context.state.dynamicUrl && context.getters.urlPath)
-				url += context.getters.urlPath;
+			if (!context.getters.urlPath)
+				throw new Error(" L'url n'est pas definie ");
+			url += context.getters.urlPath;
+			//
 			let datas = await config.get(url, { timeout: 10000 }).catch((er) => {
 				console.log("cattt", er);
 				context.commit("SET_STATUS_CRENEAUX", true);
 				context.commit("SET_LOADING", false);
 			});
-			console.log("url", datas);
+			// console.log("url", datas);
 			if (datas && datas.data && datas.data.data_creneaux) {
 				context.commit("GET_CRENEAUX_DATAS", datas.data.data_creneaux);
-				// on selectionne la premiere valeur dans equipe.
+				// On selectionne la premiere valeur dans equipe.
 				if (
 					datas.data.data_creneaux &&
 					datas.data.data_creneaux.equipes &&
@@ -153,6 +180,13 @@ export default new Vuex.Store({
 				//console.log("dts", dts);
 				context.commit("SET_RDV_DATAS", dts);
 			}
+			// On recupere rdv_config_entity
+			context.state.rdv_config_entity = datas.data.rdv_config_entity;
+			context.state.submit_rdv_entity_id = datas.data.submit_rdv_entity_id;
+
+			//set action_after_save
+			context.state.action_after_save = datas.data.action_after_save;
+			//
 			setTimeout(() => {
 				context.commit("SET_LOADING", false);
 			}, 200);
@@ -177,28 +211,37 @@ export default new Vuex.Store({
 			}
 		},
 		saveDatasCreneauSelected(context) {
+			if (!context.getters.urlPath) throw new Error("L'url n'est pas definie");
 			let url = context.getters.urlPath;
 			let data = {
-				entity_type_id: url.split("/")[0],
-				entity_id: url.split("/")[1],
+				entity_id: context.state.entity_id,
+				entity_type: context.state.entity_type,
+				entity_type_id: context.state.entity_type_id,
+				rdv_config_entity: context.state.rdv_config_entity,
+				submit_rdv_entity_id: context.state.submit_rdv_entity_id,
 				...context.state.selected,
 			};
 			context.commit("SET_SAVING_LOADING", true);
-			console.log(" Datasave : ", data, url);
-
 			config
 				.post(context.state.saveUrl + url, data)
 				.then((res) => {
+					//on emet un evement apres la suvegarde du choix de utilisateurs.
+					var event = new CustomEvent("prise_rendez_vous--save");
+					document.dispatchEvent(event);
+					//
 					console.log("reponse save", res);
-					context.commit("SET_POP_UP_INFO", {
-						show: true,
-						message: "Réservation éffectuer avec success",
-						variant: "success",
-					});
 					context.commit("SET_SAVING_LOADING", false);
-					setTimeout(() => {
-						window.location = window.location.origin;
-					}, 6000);
+					if (context.state.show_popup_save) {
+						context.commit("SET_POP_UP_INFO", {
+							show: true,
+							message: "Réservation éffectuer avec success",
+							variant: "success",
+						});
+					}
+
+					// setTimeout(() => {
+					// 	window.location = window.location.origin;
+					// }, 6000);
 				})
 				.catch((err) => {
 					console.error("save error", err);
@@ -210,10 +253,11 @@ export default new Vuex.Store({
 					context.commit("SET_SAVING_LOADING", false);
 				});
 		},
-		redirectAfterSave(context) {
-			if (context.state.popUpInfo.variant != "danger") {
-				window.location = window.location.origin;
-			}
+		redirectAfterSave({ state }) {
+			if (state.action_after_save != "")
+				if (state.popUpInfo.variant != "danger") {
+					window.location = state.action_after_save;
+				}
 		},
 	},
 	modules: {},

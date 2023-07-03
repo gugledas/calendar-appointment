@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<div class="recap-content">
-			<div class="desc-content">
+			<div class="desc-content d-none">
 				Vous êtes sur le point de réserver la prestation :
 				<strong>{{ $store.state.rdv_datas.title }} </strong> <br />
 				Pour le <strong>{{ $store.state.selected.creneau.text }} </strong><br />
@@ -10,13 +10,14 @@
 				Qui vous coûteras <strong>{{ $store.state.rdv_datas.prix }} </strong>.
 			</div>
 			<div>
-				<button
+				<b-button
+					variant="primary"
 					block
-					class="btn-regist d-flex align-items-center"
-					@click="saveDatas"
+					class="btn-regist d-flex align-items-center justify-content-center"
+					@click.prevent="saveDatas"
 				>
-					Confirmer la réservation
-					<div v-if="$store.state.saveLoading" class="ml-3">
+					<div>Confirmer la réservation</div>
+					<div v-show="$store.state.saveLoading" class="ml-3">
 						<b-spinner
 							style="width: 1.2rem; height: 1.2rem"
 							variant="primary"
@@ -24,7 +25,7 @@
 							label="Spinning"
 						></b-spinner>
 					</div>
-				</button>
+				</b-button>
 			</div>
 		</div>
 	</div>

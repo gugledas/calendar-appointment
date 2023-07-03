@@ -1,5 +1,5 @@
 <template>
-	<div class="card-appoint">
+	<div class="card-appoint" :url="urlPath">
 		<div class="container">
 			<div>
 				<service-choose></service-choose>
@@ -104,16 +104,17 @@
 				<b-spinner style="width: 3rem; height: 3rem" variant="dark"></b-spinner>
 			</div>
 		</div>
+
 		<div
 			v-if="$store.getters.canRegister && !$store.state.connected"
 			class="container"
 		>
-			<div class="d-none"><FormLogin></FormLogin></div>
 			<div class="date-hours-title">3. Identification</div>
 			<loginRegister
 				class="login-register"
-				action_after_login="emit_even"
-				model_register_form="generate_password"
+				action-after-login="emit_even"
+				model-register-form="generate_password"
+				action-after-register="emit_even_register"
 			></loginRegister>
 		</div>
 
@@ -132,7 +133,7 @@
 			class="container"
 			v-show="$store.state.connected && !$store.state.selected.creneau.editing"
 		>
-			<div class="date-hours-title">Final</div>
+			<div class="date-hours-title d-none">Final</div>
 			<recapitulation-options></recapitulation-options>
 		</div>
 		<!-- pop up modal -->
@@ -145,7 +146,7 @@
 <script>
 import { mapState, mapGetters } from "vuex";
 /* register */
-import { loginRegister } from "drupal-vuejs";
+import loginRegister from "drupal-vuejs/src/App/components/LoginRegister.vue";
 import users from "../config/users";
 /* moment js */
 import moment from "moment";
@@ -159,7 +160,6 @@ import "swiper/css";
 /* import des composants */
 import DateHourColumn from "./DateHourColumn.vue";
 import CardSelectedDate from "./CardSelectedDate.vue";
-import FormLogin from "./FormLogin.vue";
 import ServiceChoose from "./ServiceChoose.vue";
 import RecapitulationOptions from "./RecapitulationOptions.vue";
 import PopUpModal from "./PopUpModal.vue";
@@ -168,7 +168,6 @@ export default {
 	components: {
 		DateHourColumn,
 		CardSelectedDate,
-		FormLogin,
 		loginRegister,
 		ServiceChoose,
 		RecapitulationOptions,
@@ -203,7 +202,7 @@ export default {
 	},
 	computed: {
 		...mapState({ isLoading: "creneauIsLoading", selected: "selected" }),
-		...mapGetters(["daysCreneaux", "executants"]),
+		...mapGetters(["daysCreneaux", "executants", "urlPath"]),
 	},
 	methods: {
 		/** *

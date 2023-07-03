@@ -2,14 +2,15 @@
 	<div>
 		<label v-html="strings.ask_to_login"></label>
 		<loginRegister
-			action_after_login="emit_even"
-			model_register_form="generate_password"
+			action-after-login="emit_even"
+			model-register-form="generate_password"
+			action-after-register="emit_even_register"
 		></loginRegister>
 	</div>
 </template>
 
 <script>
-import { loginRegister } from "drupal-vuejs";
+import loginRegister from "drupal-vuejs/src/App/components/LoginRegister.vue";
 import { mapState } from "vuex";
 import users from "../config/users";
 export default {

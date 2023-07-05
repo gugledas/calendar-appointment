@@ -77303,8 +77303,8 @@ var HomeViewvue_type_template_id_c80f6c40_render = function render() {
 
 var HomeViewvue_type_template_id_c80f6c40_staticRenderFns = [];
 
-;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/CardAppointment.vue?vue&type=template&id=945e1cf6&
-var CardAppointmentvue_type_template_id_945e1cf6_render = function render() {
+;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/CardAppointment.vue?vue&type=template&id=31a20f65&
+var CardAppointmentvue_type_template_id_31a20f65_render = function render() {
   var _vm = this,
       _c = _vm._self._c;
 
@@ -77457,7 +77457,16 @@ var CardAppointmentvue_type_template_id_945e1cf6_render = function render() {
       "action-after-login": "emit_even",
       "model-register-form": "generate_password",
       "action-after-register": "emit_even_register"
-    }
+    },
+    scopedSlots: _vm._u([{
+      key: "condition_utilisation",
+      fn: function () {
+        return [_c('div', {
+          staticClass: "d-none"
+        }, [_vm._v("...")])];
+      },
+      proxy: true
+    }], null, false, 1223690453)
   })], 1) : _vm._e(), _vm.$store.state.connected && !_vm.$store.state.alreadyConnected ? _c('div', {
     staticClass: "container"
   }, [_c('div', {
@@ -77475,7 +77484,7 @@ var CardAppointmentvue_type_template_id_945e1cf6_render = function render() {
   }, [_vm._v("Final")]), _c('recapitulation-options')], 1), _c('div', [_c('pop-up-modal')], 1)]);
 };
 
-var CardAppointmentvue_type_template_id_945e1cf6_staticRenderFns = [function () {
+var CardAppointmentvue_type_template_id_31a20f65_staticRenderFns = [function () {
   var _vm = this,
       _c = _vm._self._c;
 
@@ -77488,7 +77497,7 @@ var CardAppointmentvue_type_template_id_945e1cf6_staticRenderFns = [function () 
   }, [_vm._v("Connected!")])])]);
 }];
 
-;// CONCATENATED MODULE: ./src/components/CardAppointment.vue?vue&type=template&id=945e1cf6&
+;// CONCATENATED MODULE: ./src/components/CardAppointment.vue?vue&type=template&id=31a20f65&
 
 ;// CONCATENATED MODULE: ./node_modules/vuex/dist/vuex.esm.js
 
@@ -86982,8 +86991,8 @@ var CheckStatusvue_type_template_id_0d56cd7c_render = function render() {
 
 var CheckStatusvue_type_template_id_0d56cd7c_staticRenderFns = [];
 
-;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!../drupal-vuejs/src/App/components/LoginGoogle.vue?vue&type=template&id=2d6edafd&
-var LoginGooglevue_type_template_id_2d6edafd_render = function render() {
+;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!../drupal-vuejs/src/App/components/LoginGoogle.vue?vue&type=template&id=1872fe04&
+var LoginGooglevue_type_template_id_1872fe04_render = function render() {
   var _vm = this,
       _c = _vm._self._c;
 
@@ -86997,7 +87006,7 @@ var LoginGooglevue_type_template_id_2d6edafd_render = function render() {
   });
 };
 
-var LoginGooglevue_type_template_id_2d6edafd_staticRenderFns = [];
+var LoginGooglevue_type_template_id_1872fe04_staticRenderFns = [];
 
 ;// CONCATENATED MODULE: ../drupal-vuejs/src/App/rx/google.js
 //const gapi = window.gapi;
@@ -88339,7 +88348,10 @@ function loadScript(src) {
       if (this.configs_login_rx_vuejs && this.configs_login_rx_vuejs.client_google_id) {
         this.initGoogle();
         return true;
-      } else return "";
+      } else {
+        console.log("Error de configuration de google, veillez denifir la clée 'client_google_id'");
+        return "";
+      }
     }
 
   },
@@ -88427,10 +88439,10 @@ function loadScript(src) {
 });
 ;// CONCATENATED MODULE: ../drupal-vuejs/src/App/components/LoginGoogle.vue?vue&type=script&lang=js&
  /* harmony default export */ var components_LoginGooglevue_type_script_lang_js_ = (LoginGooglevue_type_script_lang_js_); 
-;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-64.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-64.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-64.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-64.use[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!../drupal-vuejs/src/App/components/LoginGoogle.vue?vue&type=style&index=0&id=2d6edafd&prod&lang=scss&
+;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-64.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-64.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-64.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-64.use[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!../drupal-vuejs/src/App/components/LoginGoogle.vue?vue&type=style&index=0&id=1872fe04&prod&lang=scss&
 // extracted by mini-css-extract-plugin
 
-;// CONCATENATED MODULE: ../drupal-vuejs/src/App/components/LoginGoogle.vue?vue&type=style&index=0&id=2d6edafd&prod&lang=scss&
+;// CONCATENATED MODULE: ../drupal-vuejs/src/App/components/LoginGoogle.vue?vue&type=style&index=0&id=1872fe04&prod&lang=scss&
 
 ;// CONCATENATED MODULE: ../drupal-vuejs/src/App/components/LoginGoogle.vue
 
@@ -88443,8 +88455,8 @@ function loadScript(src) {
 
 var LoginGoogle_component = (0,componentNormalizer/* default */.Z)(
   components_LoginGooglevue_type_script_lang_js_,
-  LoginGooglevue_type_template_id_2d6edafd_render,
-  LoginGooglevue_type_template_id_2d6edafd_staticRenderFns,
+  LoginGooglevue_type_template_id_1872fe04_render,
+  LoginGooglevue_type_template_id_1872fe04_staticRenderFns,
   false,
   null,
   null,
@@ -88709,8 +88721,8 @@ var SetPassword_component = (0,componentNormalizer/* default */.Z)(
 )
 
 /* harmony default export */ var SetPassword = (SetPassword_component.exports);
-;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!../drupal-vuejs/src/App/components/RegisTer.vue?vue&type=template&id=f644ecb2&
-var RegisTervue_type_template_id_f644ecb2_render = function render() {
+;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!../drupal-vuejs/src/App/components/RegisTer.vue?vue&type=template&id=14d4f196&
+var RegisTervue_type_template_id_14d4f196_render = function render() {
   var _vm = this,
       _c = _vm._self._c;
 
@@ -88857,12 +88869,10 @@ var RegisTervue_type_template_id_f644ecb2_render = function render() {
   }, [_c('span', {
     staticClass: "btn-login__text"
   }, [_vm._v(" " + _vm._s(_vm.messages.submit.register) + " ")]), _vm.waiting == 'wait' ? _c('svgWaiting') : _vm._e()], 1)]), _c('hr')], 2) : _vm._e(), _vm.modelRegisterFormResult === 'generate_password' ? _c('div', [_c('h4', {
-    staticClass: "title"
-  }, [_vm._v("Creation automatique du compte")]), _c('p', {
-    staticClass: "mb-4"
-  }, [_vm._v(" Vos informations de connexion seront transferés à cette adresse. ")]), _vm.validEmail(_vm.form.name[0].value) ? _c('div', {
+    staticClass: "title mb-5"
+  }, [_vm._v("Creation automatique du compte")]), _vm.validEmail(_vm.form.name[0].value) ? _c('div', {
     staticClass: "mb-5"
-  }, [_c('strong', [_vm._v(" " + _vm._s(_vm.form.name[0].value) + " ")]), _vm._v(" " + _vm._s(_vm.set_email()) + " ")]) : _vm._e(), !_vm.validEmail(_vm.form.name[0].value) ? _c('div', [_c('ValidationProvider', {
+  }, [_c('p', [_vm._v("Vos informations de connexion seront transferés à cette adresse.")]), _c('strong', [_vm._v(" " + _vm._s(_vm.form.name[0].value) + " ")]), _vm._v(" " + _vm._s(_vm.set_email()) + " ")]) : _vm._e(), !_vm.validEmail(_vm.form.name[0].value) ? _c('div', [_c('ValidationProvider', {
     ref: "mail",
     staticClass: "d-block w-100",
     attrs: {
@@ -88874,7 +88884,9 @@ var RegisTervue_type_template_id_f644ecb2_render = function render() {
       fn: function (v) {
         return [_c('div', {
           staticClass: "form-group content-center__input"
-        }, [_c('input', {
+        }, [_c('label', {
+          staticClass: "mb-0 pb-0"
+        }, [_vm._v(" Votre adresse email ")]), _c('input', {
           directives: [{
             name: "model",
             rawName: "v-model",
@@ -88896,7 +88908,7 @@ var RegisTervue_type_template_id_f644ecb2_render = function render() {
               _vm.$set(_vm.form.mail[0], "value", $event.target.value);
             }
           }
-        })]), _c('div', {
+        }), _c('div', [_c('small', [_vm._v(" Vos informations de connexion seront transferés à cette adresse. ")])])]), _c('div', {
           staticClass: "text-danger text-small"
         }, _vm._l(v.errors, function (error, ii) {
           return _c('small', {
@@ -88905,7 +88917,7 @@ var RegisTervue_type_template_id_f644ecb2_render = function render() {
           }, [_vm._v(" " + _vm._s(error) + " ")]);
         }), 0)];
       }
-    }], null, false, 3187930093)
+    }], null, false, 1488605717)
   })], 1) : _vm._e(), _c('div', {
     staticClass: "content-center__btn"
   }, [_c('div', {
@@ -88940,7 +88952,7 @@ var RegisTervue_type_template_id_f644ecb2_render = function render() {
   }, [_vm._v(" Retour ")])], 1);
 };
 
-var RegisTervue_type_template_id_f644ecb2_staticRenderFns = [];
+var RegisTervue_type_template_id_14d4f196_staticRenderFns = [];
 
 ;// CONCATENATED MODULE: ../drupal-vuejs/src/App/formatFields/InputBootstrap.js
 /* harmony default export */ var InputBootstrap = ({
@@ -89149,8 +89161,8 @@ class formatField {
      * Resultat entre la config endur et celle en BD.
      */
     modelRegisterFormResult() {
-      if (this.modelRegisterForm) {
-        return this.modelRegisterForms;
+      if (this.modelRegisterForm == "generate_password" || this.modelRegisterForm == "default") {
+        return this.modelRegisterForm;
       } else if (this.configs_login_rx_vuejs && this.configs_login_rx_vuejs.generate_user) {
         return "generate_password";
       } else {
@@ -89274,8 +89286,8 @@ class formatField {
 ;
 var RegisTer_component = (0,componentNormalizer/* default */.Z)(
   components_RegisTervue_type_script_lang_js_,
-  RegisTervue_type_template_id_f644ecb2_render,
-  RegisTervue_type_template_id_f644ecb2_staticRenderFns,
+  RegisTervue_type_template_id_14d4f196_render,
+  RegisTervue_type_template_id_14d4f196_staticRenderFns,
   false,
   null,
   null,
@@ -101099,6 +101111,7 @@ var PopUpModal_component = (0,componentNormalizer/* default */.Z)(
 
   mounted() {
     this.check_if_user_connected();
+    this.checkIfUserRegister();
     users.getCurrentUser().then(user => {
       //console.log("user login--", user);
       if (user) {
@@ -101146,6 +101159,20 @@ var PopUpModal_component = (0,componentNormalizer/* default */.Z)(
               connected: true,
               already: false
             });
+          }
+        });
+      }, false);
+    },
+
+    checkIfUserRegister() {
+      //login_rx_vuejs__user_is_register
+      console.log(" User register ");
+      document.addEventListener("login_rx_vuejs__user_is_register", () => {
+        users.getCurrentUser().then(user => {
+          console.log("user register--", user);
+
+          if (user) {
+            window.location.reload();
           }
         });
       }, false);
@@ -101238,10 +101265,10 @@ var PopUpModal_component = (0,componentNormalizer/* default */.Z)(
 });
 ;// CONCATENATED MODULE: ./src/components/CardAppointment.vue?vue&type=script&lang=js&
  /* harmony default export */ var components_CardAppointmentvue_type_script_lang_js_ = (CardAppointmentvue_type_script_lang_js_); 
-;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-64.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-64.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-64.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-64.use[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/CardAppointment.vue?vue&type=style&index=0&id=945e1cf6&prod&lang=scss&
+;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-64.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-64.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-64.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-64.use[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/CardAppointment.vue?vue&type=style&index=0&id=31a20f65&prod&lang=scss&
 // extracted by mini-css-extract-plugin
 
-;// CONCATENATED MODULE: ./src/components/CardAppointment.vue?vue&type=style&index=0&id=945e1cf6&prod&lang=scss&
+;// CONCATENATED MODULE: ./src/components/CardAppointment.vue?vue&type=style&index=0&id=31a20f65&prod&lang=scss&
 
 ;// CONCATENATED MODULE: ./src/components/CardAppointment.vue
 
@@ -101254,8 +101281,8 @@ var PopUpModal_component = (0,componentNormalizer/* default */.Z)(
 
 var CardAppointment_component = (0,componentNormalizer/* default */.Z)(
   components_CardAppointmentvue_type_script_lang_js_,
-  CardAppointmentvue_type_template_id_945e1cf6_render,
-  CardAppointmentvue_type_template_id_945e1cf6_staticRenderFns,
+  CardAppointmentvue_type_template_id_31a20f65_render,
+  CardAppointmentvue_type_template_id_31a20f65_staticRenderFns,
   false,
   null,
   null,
@@ -101337,6 +101364,10 @@ const state = {
     mail: [{
       value: ""
     }]
+  },
+  configs_login_rx_vuejs: {
+    client_google_id: "513247959752-qapd9jb30pdtoh51m0h53070a2v8c4er.apps.googleusercontent.com" //from https://console.cloud.google.com/apis/credentials?project=lesroisdelareno
+
   },
 
   /* représente les données d'un créneaux spécifique en BD */

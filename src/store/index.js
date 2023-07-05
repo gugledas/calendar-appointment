@@ -10,6 +10,10 @@ const state = {
 		name: [{ value: "" }],
 		mail: [{ value: "" }],
 	},
+	configs_login_rx_vuejs: {
+		client_google_id:
+			"513247959752-qapd9jb30pdtoh51m0h53070a2v8c4er.apps.googleusercontent.com", //from https://console.cloud.google.com/apis/credentials?project=lesroisdelareno
+	},
 	/* représente les données d'un créneaux spécifique en BD */
 	creneaux_datas: [],
 	/* information de la prestation sélectionner */

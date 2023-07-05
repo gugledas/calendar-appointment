@@ -115,7 +115,11 @@
 				action-after-login="emit_even"
 				model-register-form="generate_password"
 				action-after-register="emit_even_register"
-			></loginRegister>
+			>
+				<template v-slot:condition_utilisation>
+					<div class="d-none">...</div>
+				</template>
+			</loginRegister>
 		</div>
 
 		<div
@@ -183,6 +187,7 @@ export default {
 	},
 	mounted() {
 		this.check_if_user_connected();
+		this.checkIfUserRegister();
 		users.getCurrentUser().then((user) => {
 			//console.log("user login--", user);
 			if (user) {
@@ -228,6 +233,22 @@ export default {
 								connected: true,
 								already: false,
 							});
+						}
+					});
+				},
+				false
+			);
+		},
+		checkIfUserRegister() {
+			//login_rx_vuejs__user_is_register
+			console.log(" User register ");
+			document.addEventListener(
+				"login_rx_vuejs__user_is_register",
+				() => {
+					users.getCurrentUser().then((user) => {
+						console.log("user register--", user);
+						if (user) {
+							window.location.reload();
 						}
 					});
 				},
@@ -492,7 +513,6 @@ swiper-rows {
 		}
 	}
 	.login-page {
-		max-width: initial;
 		min-height: initial;
 
 		.spinner-grow {

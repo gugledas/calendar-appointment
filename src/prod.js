@@ -63,6 +63,8 @@ new Vue({
 		this.$store.state.entity_type_id = this.entity_type_id;
 
 		this.getDatas();
+		//
+		this.$store.dispatch("loadChoisesOfuser");
 	},
 	render: (h) =>
 		h(App, {

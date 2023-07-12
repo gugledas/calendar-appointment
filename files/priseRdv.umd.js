@@ -77303,8 +77303,8 @@ var HomeViewvue_type_template_id_c80f6c40_render = function render() {
 
 var HomeViewvue_type_template_id_c80f6c40_staticRenderFns = [];
 
-;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/CardAppointment.vue?vue&type=template&id=31a20f65&
-var CardAppointmentvue_type_template_id_31a20f65_render = function render() {
+;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/CardAppointment.vue?vue&type=template&id=92ff50c2&
+var CardAppointmentvue_type_template_id_92ff50c2_render = function render() {
   var _vm = this,
       _c = _vm._self._c;
 
@@ -77484,7 +77484,7 @@ var CardAppointmentvue_type_template_id_31a20f65_render = function render() {
   }, [_vm._v("Final")]), _c('recapitulation-options')], 1), _c('div', [_c('pop-up-modal')], 1)]);
 };
 
-var CardAppointmentvue_type_template_id_31a20f65_staticRenderFns = [function () {
+var CardAppointmentvue_type_template_id_92ff50c2_staticRenderFns = [function () {
   var _vm = this,
       _c = _vm._self._c;
 
@@ -77497,7 +77497,7 @@ var CardAppointmentvue_type_template_id_31a20f65_staticRenderFns = [function () 
   }, [_vm._v("Connected!")])])]);
 }];
 
-;// CONCATENATED MODULE: ./src/components/CardAppointment.vue?vue&type=template&id=31a20f65&
+;// CONCATENATED MODULE: ./src/components/CardAppointment.vue?vue&type=template&id=92ff50c2&
 
 ;// CONCATENATED MODULE: ./node_modules/vuex/dist/vuex.esm.js
 
@@ -86991,8 +86991,8 @@ var CheckStatusvue_type_template_id_0d56cd7c_render = function render() {
 
 var CheckStatusvue_type_template_id_0d56cd7c_staticRenderFns = [];
 
-;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!../drupal-vuejs/src/App/components/LoginGoogle.vue?vue&type=template&id=1872fe04&
-var LoginGooglevue_type_template_id_1872fe04_render = function render() {
+;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!../drupal-vuejs/src/App/components/LoginGoogle.vue?vue&type=template&id=37c845e8&
+var LoginGooglevue_type_template_id_37c845e8_render = function render() {
   var _vm = this,
       _c = _vm._self._c;
 
@@ -87006,7 +87006,7 @@ var LoginGooglevue_type_template_id_1872fe04_render = function render() {
   });
 };
 
-var LoginGooglevue_type_template_id_1872fe04_staticRenderFns = [];
+var LoginGooglevue_type_template_id_37c845e8_staticRenderFns = [];
 
 ;// CONCATENATED MODULE: ../drupal-vuejs/src/App/rx/google.js
 //const gapi = window.gapi;
@@ -88370,7 +88370,6 @@ function loadScript(src) {
       var self = this;
 
       function handleCredentialResponse(response) {
-        console.log("Encoded JWT ID token: ", response);
         google.userAccess = { ...response,
           client_id: response.clientId
         };
@@ -88378,10 +88377,9 @@ function loadScript(src) {
         window.rxGoogle = google;
       }
 
-      console.log(" window.onload ! ", window.onload);
-
       const goo = () => {
         window.google.accounts.id.initialize({
+          // example => 51324xxxx-xxxxxxxxxxxxxxxxx8c4er.apps.googleusercontent.com
           client_id: this.configs_login_rx_vuejs.client_google_id,
           callback: handleCredentialResponse
         });
@@ -88439,10 +88437,10 @@ function loadScript(src) {
 });
 ;// CONCATENATED MODULE: ../drupal-vuejs/src/App/components/LoginGoogle.vue?vue&type=script&lang=js&
  /* harmony default export */ var components_LoginGooglevue_type_script_lang_js_ = (LoginGooglevue_type_script_lang_js_); 
-;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-64.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-64.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-64.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-64.use[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!../drupal-vuejs/src/App/components/LoginGoogle.vue?vue&type=style&index=0&id=1872fe04&prod&lang=scss&
+;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-64.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-64.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-64.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-64.use[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!../drupal-vuejs/src/App/components/LoginGoogle.vue?vue&type=style&index=0&id=37c845e8&prod&lang=scss&
 // extracted by mini-css-extract-plugin
 
-;// CONCATENATED MODULE: ../drupal-vuejs/src/App/components/LoginGoogle.vue?vue&type=style&index=0&id=1872fe04&prod&lang=scss&
+;// CONCATENATED MODULE: ../drupal-vuejs/src/App/components/LoginGoogle.vue?vue&type=style&index=0&id=37c845e8&prod&lang=scss&
 
 ;// CONCATENATED MODULE: ../drupal-vuejs/src/App/components/LoginGoogle.vue
 
@@ -88455,8 +88453,8 @@ function loadScript(src) {
 
 var LoginGoogle_component = (0,componentNormalizer/* default */.Z)(
   components_LoginGooglevue_type_script_lang_js_,
-  LoginGooglevue_type_template_id_1872fe04_render,
-  LoginGooglevue_type_template_id_1872fe04_staticRenderFns,
+  LoginGooglevue_type_template_id_37c845e8_render,
+  LoginGooglevue_type_template_id_37c845e8_staticRenderFns,
   false,
   null,
   null,
@@ -89522,7 +89520,7 @@ var LoginRegister_component = (0,componentNormalizer/* default */.Z)(
 
 /* harmony default export */ var rootConfig = ({ ...BootStrap,
   languageId: window.drupalSettings && window.drupalSettings.path && window.drupalSettings.path.currentLanguage ? window.drupalSettings.path.currentLanguage : null,
-  TestDomain: "http://wb-horizon.kksa"
+  TestDomain: window.location.host.includes(".kksa") ? "http://" + window.location.host : "http://wb-horizon.kksa"
 });
 ;// CONCATENATED MODULE: ../drupal-vuejs/src/App/users/user.js
 
@@ -100616,8 +100614,8 @@ function EffectCards(_ref) {
 
 
 
-;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/DateHourColumn.vue?vue&type=template&id=180a66bc&
-var DateHourColumnvue_type_template_id_180a66bc_render = function render() {
+;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/DateHourColumn.vue?vue&type=template&id=2435fa11&
+var DateHourColumnvue_type_template_id_2435fa11_render = function render() {
   var _vm = this,
       _c = _vm._self._c;
 
@@ -100639,7 +100637,7 @@ var DateHourColumnvue_type_template_id_180a66bc_render = function render() {
   }), 0);
 };
 
-var DateHourColumnvue_type_template_id_180a66bc_staticRenderFns = [];
+var DateHourColumnvue_type_template_id_2435fa11_staticRenderFns = [];
 
 ;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/DateHourColumn.vue?vue&type=script&lang=js&
 
@@ -100700,7 +100698,7 @@ var DateHourColumnvue_type_template_id_180a66bc_staticRenderFns = [];
      * @param {string} creneauTime.value Réprésente la valeur  du créneaux sélectionner
      */
     chooseCreneau(creneauTime) {
-      let day = moment_default()(this.creneaux.value, "ddd D MMM YYYY").locale("fr");
+      let day = moment_default()(this.creneaux.value, "YYYY-MM-DD").locale("fr");
       let weekDays = day.format("dddd");
       let month = day.format("MMMM");
       let dayNumber = day.format("D");
@@ -100730,8 +100728,8 @@ var DateHourColumnvue_type_template_id_180a66bc_staticRenderFns = [];
 ;
 var DateHourColumn_component = (0,componentNormalizer/* default */.Z)(
   components_DateHourColumnvue_type_script_lang_js_,
-  DateHourColumnvue_type_template_id_180a66bc_render,
-  DateHourColumnvue_type_template_id_180a66bc_staticRenderFns,
+  DateHourColumnvue_type_template_id_2435fa11_render,
+  DateHourColumnvue_type_template_id_2435fa11_staticRenderFns,
   false,
   null,
   null,
@@ -101127,7 +101125,7 @@ var PopUpModal_component = (0,componentNormalizer/* default */.Z)(
         this.editSwiper();
         clearInterval(inter);
       }
-    }, 100);
+    }, 100); //
   },
 
   computed: { ...mapState({
@@ -101149,32 +101147,38 @@ var PopUpModal_component = (0,componentNormalizer/* default */.Z)(
     },
 
     check_if_user_connected() {
-      console.log("user login");
       document.addEventListener("login_rx_vuejs__user_is_login", () => {
-        users.getCurrentUser().then(user => {
-          console.log("user login--", user);
-
-          if (user) {
-            this.$store.dispatch("setConnected", {
-              connected: true,
-              already: false
-            });
-          }
-        });
+        if (this.$store.state.entity_type == "commerce_order") {
+          // Si l'utilisateur viens de se connecter on recharge la page afin de mettre à jour le formulaire checkout.
+          window.location.reload();
+        } else {
+          users.getCurrentUser().then(user => {
+            if (user) {
+              this.$store.dispatch("setConnected", {
+                connected: true,
+                already: false
+              });
+            }
+          });
+        }
       }, false);
     },
 
     checkIfUserRegister() {
-      //login_rx_vuejs__user_is_register
-      console.log(" User register ");
       document.addEventListener("login_rx_vuejs__user_is_register", () => {
-        users.getCurrentUser().then(user => {
-          console.log("user register--", user);
-
-          if (user) {
-            window.location.reload();
-          }
-        });
+        if (this.$store.state.entity_type == "commerce_order") {
+          // Si l'utilisateur viens de se connecter on recharge la page afin de mettre à jour le formulaire checkout.
+          window.location.reload();
+        } else {
+          users.getCurrentUser().then(user => {
+            if (user) {
+              this.$store.dispatch("setConnected", {
+                connected: true,
+                already: false
+              });
+            }
+          });
+        }
       }, false);
     },
 
@@ -101265,10 +101269,10 @@ var PopUpModal_component = (0,componentNormalizer/* default */.Z)(
 });
 ;// CONCATENATED MODULE: ./src/components/CardAppointment.vue?vue&type=script&lang=js&
  /* harmony default export */ var components_CardAppointmentvue_type_script_lang_js_ = (CardAppointmentvue_type_script_lang_js_); 
-;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-64.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-64.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-64.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-64.use[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/CardAppointment.vue?vue&type=style&index=0&id=31a20f65&prod&lang=scss&
+;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-64.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-64.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-64.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-64.use[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/CardAppointment.vue?vue&type=style&index=0&id=92ff50c2&prod&lang=scss&
 // extracted by mini-css-extract-plugin
 
-;// CONCATENATED MODULE: ./src/components/CardAppointment.vue?vue&type=style&index=0&id=31a20f65&prod&lang=scss&
+;// CONCATENATED MODULE: ./src/components/CardAppointment.vue?vue&type=style&index=0&id=92ff50c2&prod&lang=scss&
 
 ;// CONCATENATED MODULE: ./src/components/CardAppointment.vue
 
@@ -101281,8 +101285,8 @@ var PopUpModal_component = (0,componentNormalizer/* default */.Z)(
 
 var CardAppointment_component = (0,componentNormalizer/* default */.Z)(
   components_CardAppointmentvue_type_script_lang_js_,
-  CardAppointmentvue_type_template_id_31a20f65_render,
-  CardAppointmentvue_type_template_id_31a20f65_staticRenderFns,
+  CardAppointmentvue_type_template_id_92ff50c2_render,
+  CardAppointmentvue_type_template_id_92ff50c2_staticRenderFns,
   false,
   null,
   null,
@@ -101576,6 +101580,7 @@ const state = {
      */
     setSelectedCreneau(context, datas) {
       context.commit("SET_SELECTED_CRENEAUX", datas);
+      context.dispatch("saveChoisesOfuser");
     },
 
     setSelectedEquipe(context, datas) {
@@ -101629,6 +101634,45 @@ const state = {
         });
         context.commit("SET_SAVING_LOADING", false);
       });
+    },
+
+    /**
+     * Enregistre les choix de l'utilisateur.
+     */
+    saveChoisesOfuser({
+      state
+    }) {
+      setTimeout(() => {
+        // On verifie qu'on est toujours sur la meme entite.
+        const val = {
+          entity_id: state.entity_id,
+          entity_type: state.entity_type,
+          selected: state.selected
+        };
+        window.localStorage.setItem("calendar_appoint_selected", JSON.stringify(val));
+      }, 300);
+    },
+
+    /**
+     *
+     * @param {*} param0
+     */
+    loadChoisesOfuser({
+      state,
+      commit
+    }) {
+      var v = window.localStorage.getItem("calendar_appoint_selected");
+
+      if (v) {
+        const val = JSON.parse(v);
+
+        if (val.entity_id == state.entity_id && val.entity_type == state.entity_type) {
+          if (val.selected.creneau && val.selected.creneau.date) {
+            commit("SET_SELECTED_CRENEAUX", val.selected.creneau);
+            commit("SET_SELECTED_EQUIPE", val.selected.equipe);
+          }
+        }
+      }
     },
 
     redirectAfterSave({
@@ -105363,7 +105407,9 @@ new (external_commonjs_vue_commonjs2_vue_root_Vue_default())({
     this.$store.state.entity_id = this.entity_id;
     this.$store.state.entity_type = this.entity_type;
     this.$store.state.entity_type_id = this.entity_type_id;
-    this.getDatas();
+    this.getDatas(); //
+
+    this.$store.dispatch("loadChoisesOfuser");
   },
 
   render: h => h(App, {

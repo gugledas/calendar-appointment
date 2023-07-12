@@ -9,5 +9,7 @@ export default {
 		window.drupalSettings.path.currentLanguage
 			? window.drupalSettings.path.currentLanguage
 			: null,
-	TestDomain: "http://wb-horizon.kksa",
+	TestDomain: window.location.host.includes(".kksa")
+		? "http://" + window.location.host
+		: "http://wb-horizon.kksa",
 };

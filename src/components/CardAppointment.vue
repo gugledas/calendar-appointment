@@ -204,6 +204,7 @@ export default {
 				clearInterval(inter);
 			}
 		}, 100);
+		//
 	},
 	computed: {
 		...mapState({ isLoading: "creneauIsLoading", selected: "selected" }),
@@ -222,35 +223,43 @@ export default {
 			return today.includes(real_Date);
 		},
 		check_if_user_connected() {
-			console.log("user login");
 			document.addEventListener(
 				"login_rx_vuejs__user_is_login",
 				() => {
-					users.getCurrentUser().then((user) => {
-						console.log("user login--", user);
-						if (user) {
-							this.$store.dispatch("setConnected", {
-								connected: true,
-								already: false,
-							});
-						}
-					});
+					if (this.$store.state.entity_type == "commerce_order") {
+						// Si l'utilisateur viens de se connecter on recharge la page afin de mettre à jour le formulaire checkout.
+						window.location.reload();
+					} else {
+						users.getCurrentUser().then((user) => {
+							if (user) {
+								this.$store.dispatch("setConnected", {
+									connected: true,
+									already: false,
+								});
+							}
+						});
+					}
 				},
 				false
 			);
 		},
 		checkIfUserRegister() {
-			//login_rx_vuejs__user_is_register
-			console.log(" User register ");
 			document.addEventListener(
 				"login_rx_vuejs__user_is_register",
 				() => {
-					users.getCurrentUser().then((user) => {
-						console.log("user register--", user);
-						if (user) {
-							window.location.reload();
-						}
-					});
+					if (this.$store.state.entity_type == "commerce_order") {
+						// Si l'utilisateur viens de se connecter on recharge la page afin de mettre à jour le formulaire checkout.
+						window.location.reload();
+					} else {
+						users.getCurrentUser().then((user) => {
+							if (user) {
+								this.$store.dispatch("setConnected", {
+									connected: true,
+									already: false,
+								});
+							}
+						});
+					}
 				},
 				false
 			);

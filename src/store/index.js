@@ -203,6 +203,7 @@ export default new Vuex.Store({
 		 */
 		setSelectedCreneau(context, datas) {
 			context.commit("SET_SELECTED_CRENEAUX", datas);
+			context.dispatch("saveChoisesOfuser");
 		},
 		setSelectedEquipe(context, datas) {
 			context.commit("SET_SELECTED_EQUIPE", datas);
@@ -256,6 +257,42 @@ export default new Vuex.Store({
 					});
 					context.commit("SET_SAVING_LOADING", false);
 				});
+		},
+		/**
+		 * Enregistre les choix de l'utilisateur.
+		 */
+		saveChoisesOfuser({ state }) {
+			setTimeout(() => {
+				// On verifie qu'on est toujours sur la meme entite.
+				const val = {
+					entity_id: state.entity_id,
+					entity_type: state.entity_type,
+					selected: state.selected,
+				};
+				window.localStorage.setItem(
+					"calendar_appoint_selected",
+					JSON.stringify(val)
+				);
+			}, 300);
+		},
+		/**
+		 *
+		 * @param {*} param0
+		 */
+		loadChoisesOfuser({ state, commit }) {
+			var v = window.localStorage.getItem("calendar_appoint_selected");
+			if (v) {
+				const val = JSON.parse(v);
+				if (
+					val.entity_id == state.entity_id &&
+					val.entity_type == state.entity_type
+				) {
+					if (val.selected.creneau && val.selected.creneau.date) {
+						commit("SET_SELECTED_CRENEAUX", val.selected.creneau);
+						commit("SET_SELECTED_EQUIPE", val.selected.equipe);
+					}
+				}
+			}
 		},
 		redirectAfterSave({ state }) {
 			if (state.action_after_save != "")

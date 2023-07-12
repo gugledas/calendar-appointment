@@ -71,7 +71,7 @@ export default {
 		 * @param {string} creneauTime.value Réprésente la valeur  du créneaux sélectionner
 		 */
 		chooseCreneau(creneauTime) {
-			let day = moment(this.creneaux.value, "ddd D MMM YYYY").locale("fr");
+			let day = moment(this.creneaux.value, "YYYY-MM-DD").locale("fr");
 			let weekDays = day.format("dddd");
 			let month = day.format("MMMM");
 			let dayNumber = day.format("D");
